@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="@dimen/base_p_m_15"
+             android:layout_marginRight="@dimen/base_p_m_15"
+             android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_game_gallery_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:stateListAnimator="@drawable/bm_selector_press_scale_out"/>
+
+</FrameLayout>

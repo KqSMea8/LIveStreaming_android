@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="ThemeLibCore">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="AppThemeInit" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/wel_bg</item>
+    </style>
+
+    <style name="AppThemeAnimation" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/AppAnimation</item>
+        <item name="android:windowBackground" >@null</item>
+    </style>
+
+    <style name="AppAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_slide_out_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_slide_in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_slide_out_to_right</item>
+    </style>
+
+
+    <style name="weight_length_horizontal">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="room_eq_middle_item" parent="@style/weight_length_horizontal">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="room_eq_effect_name" parent="@style/wrap_wrap">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff3d4658</item>
+    </style>
+
+    <style name="room_eq_adjust_img" parent="@style/wrap_wrap">
+        <item name="android:padding">10.0dip</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="room_eq_vertical_seekbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:maxHeight">3dp</item>
+        <item name="android:progressDrawable">@drawable/room_effect_ver_seekbar</item>
+        <item name="android:thumbOffset">0dp</item>
+    </style>
+
+    <style name="fra_tab_me_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/selector_white_to_gray_press</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="fra_tab_me_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/user_home_text_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

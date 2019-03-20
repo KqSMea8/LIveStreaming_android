@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:background="@drawable/bm_layer_white_corner_10dp"
+    android:id="@+id/ll_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="name"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:id="@+id/tv_name"
+            android:layout_height="wrap_content" />
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_centerInParent="true"
+                app:layout_heightPercent="100%w"
+                android:adjustViewBounds="true"
+                />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_plugin_price"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_plugin_price_item"
+                android:gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:layout_below="@id/tv_days"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text_title"
+                android:textSize="11sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

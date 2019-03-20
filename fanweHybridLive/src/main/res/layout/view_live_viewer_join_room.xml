@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@drawable/bg_live_viewer_high_join"
+    android:gravity="center_vertical"
+    android:id="@+id/view_join_bg"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_shouhu"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:text="欢迎"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/iv_level"
+            android:layout_width="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp" />
+        <ImageView
+            android:id="@+id/iv_shouhu"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/live_username_viewer" />
+
+        <TextView
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="进入"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:id="@+id/tv_join"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

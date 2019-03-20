@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主要字体颜色 -->
+    <color name="text_gray">#808080</color>
+    <color name="text_black">#3B3B3B</color>
+    <color name="text_orange">#FA6602</color>
+    <!-- 透明颜色 -->
+    <color name="transparent_color">#000000</color>
+    <color name="half_trans_color">#b00000</color>
+    <!-- 半透明 -->
+    <color name="blur">#20000000</color>
+
+    
+</resources>

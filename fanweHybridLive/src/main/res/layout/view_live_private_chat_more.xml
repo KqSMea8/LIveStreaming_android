@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    app:alignContent="center"
+    app:alignItems="flex_start"
+    app:flexWrap="wrap"
+    app:justifyContent="flex_start">
+
+    <include
+        android:id="@+id/lin_iv_gift"
+        layout="@layout/view_live_private_chat_more_child"
+        />
+
+    <include
+        android:id="@+id/lin_iv_camera"
+        layout="@layout/view_live_private_chat_more_child"/>
+
+    <include
+        android:id="@+id/lin_iv_photo"
+        layout="@layout/view_live_private_chat_more_child" />
+
+    <include
+        android:id="@+id/lin_iv_send_coin"
+        layout="@layout/view_live_private_chat_more_child" />
+
+    <include
+        android:id="@+id/lin_iv_send_diamond"
+        layout="@layout/view_live_private_chat_more_child" />
+
+</com.google.android.flexbox.FlexboxLayout>

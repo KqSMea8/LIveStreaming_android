@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保证金:"
+        android:textColor="@color/text_title"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:layout_width="@dimen/image_diamond_size"
+        android:layout_height="@dimen/image_diamond_size"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_diamond"/>
+
+    <TextView
+        android:id="@+id/tv_bz_diamonds_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="0"
+        android:textColor="@color/text_title"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_take_part_in"
+        style="@style/btn_base"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_common_height"
+        android:background="@drawable/selector_main_color_corner20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="参拍保证金"
+        android:textColor="@color/white"/>
+</LinearLayout>

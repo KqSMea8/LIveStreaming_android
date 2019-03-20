@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/text_content_deep"
+            android:text="秀豆余额:0"/>
+
+        <TextView
+            android:id="@+id/tv_game_exchange_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:visibility="visible"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/text_gray"
+            android:text="兑换比例:0.0"/>
+
+        <EditText
+            android:id="@+id/et_game_exchange"
+            style="@style/edit_base"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:background="@drawable/layer_white_stroke_corner"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/tv_game_coins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="13sp"
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_gray"
+            android:text="123154646"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#DEDEDE"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_dialog_item"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:background="@drawable/selector_dialog_cancel"
+            android:textColor="@color/text_content_deep"
+            android:textSize="@dimen/text_dialog_button"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#DEDEDE"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_dialog_item"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:background="@drawable/selector_dialog_confirm"
+            android:textColor="@color/text_content_deep"
+            android:textSize="@dimen/text_dialog_button"/>
+    </LinearLayout>
+</LinearLayout>

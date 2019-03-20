@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="height_bottom_navigation">48dp</dimen>
+    <dimen name="height_bottom_navigation_actual">94dp</dimen>
+    <dimen name="height_bottom_pic">28dp</dimen>
+    <dimen name="width_bottom_pic">30dp</dimen>
+
+
+</resources>

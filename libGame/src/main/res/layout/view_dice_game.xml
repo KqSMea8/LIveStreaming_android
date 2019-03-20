@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="226dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.fanwe.libgame.dice.view.DicePanelBodyView
+            android:id="@+id/view_dice_panel_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"/>
+
+        <com.fanwe.libgame.dice.view.DiceClockView
+            android:id="@+id/view_clock"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:translationZ="50dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gold_amount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title_bar"
+        android:orientation="horizontal">
+
+        <com.fanwe.libgame.dice.view.DiceBottomView
+            android:id="@+id/view_game_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

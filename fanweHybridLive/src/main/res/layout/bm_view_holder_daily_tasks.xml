@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_p_m_10"
+                android:layout_marginLeft="@dimen/base_p_m_10"
+                android:layout_marginRight="@dimen/base_p_m_10"
+                android:background="#FAFAFA"
+                android:orientation="vertical"
+                android:padding="@dimen/base_p_m_10">
+
+    <ImageView
+        android:id="@+id/iv_task_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_p_m_10"
+        android:layout_toLeftOf="@+id/fl_anchor_right"
+        android:layout_toRightOf="@+id/iv_task_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_task_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_item_title"/>
+
+        <TextView
+            android:id="@+id/tv_task_award_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF5858"
+            android:layout_marginTop="@dimen/base_p_m_5"
+            android:textSize="@dimen/text_content"/>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="@dimen/base_p_m_5">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/award"-->
+                <!--android:textColor="#FF5858"-->
+                <!--android:textSize="@dimen/text_content"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_task_award_amount"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingLeft="@dimen/base_p_m_5"-->
+                <!--android:textColor="#FF5858"-->
+                <!--android:textSize="@dimen/text_content"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="18dp"-->
+                <!--android:layout_height="18dp"-->
+                <!--android:layout_marginLeft="@dimen/base_p_m_5"-->
+                <!--android:src="@drawable/ic_dice_panel_bot_diamond"/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_anchor_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/receive"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/base_p_m_15"
+            android:paddingRight="@dimen/base_p_m_15"
+            android:visibility="invisible" />
+        <TextView
+            android:id="@+id/tv_receive_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/receive"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/base_p_m_15"
+            android:paddingRight="@dimen/base_p_m_15"
+            android:paddingTop="@dimen/base_p_m_5"
+            android:paddingBottom="@dimen/base_p_m_5"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="@dimen/text_content"
+            android:background="@drawable/bm_selector_button_main" />
+
+        <TextView
+            android:id="@+id/tv_task_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_item_title"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

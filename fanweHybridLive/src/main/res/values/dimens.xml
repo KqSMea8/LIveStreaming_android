@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="width_live_bottom_menu">35dp</dimen>
+    <dimen name="height_live_bottom_menu">45dp</dimen>
+
+    <dimen name="width_live_bottom_menu_image">35dp</dimen>
+    <dimen name="height_live_bottom_menu_image">35dp</dimen>
+
+    <dimen name="width_live_viewer_head_image">30dp</dimen>
+    <dimen name="width_live_pk_head_image">35dp</dimen>
+    <dimen name="height_live_viewer_head_image">30dp</dimen>
+
+    <dimen name="height_live_search_bar">40dp</dimen>
+
+    <dimen name="height_photo_view">10dip</dimen>
+</resources>

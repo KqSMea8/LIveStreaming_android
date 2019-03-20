@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <ImageView
+        android:id="@+id/img_castle_house"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/animation_castle_house"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/img_castle_snowfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scaleType="centerCrop"
+        android:src="@drawable/animation_castle_snowfield"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/img_castle_coach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/animation_castle_coach"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/img_castle_star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/animation_castle_star"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/img_castle_heart"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="right"
+        android:src="@drawable/animation_castle_heart"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/img_castle_snowflake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_gravity="right"
+        android:src="@drawable/animation_castle_snowflake"
+        android:visibility="invisible"/>
+
+
+</FrameLayout>

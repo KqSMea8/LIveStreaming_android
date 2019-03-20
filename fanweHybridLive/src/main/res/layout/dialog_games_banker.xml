@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/layer_white_solid_10dp_corner"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/main_color"
+        android:text="申请上庄金额"/>
+
+    <EditText
+        android:id="@+id/et_apply_banker"
+        style="@style/edit_base"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="输入金额不得低于底金"
+        android:background="@drawable/layer_white_stroke_main_color_corner"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tv_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/text_content"
+        android:text="底金:1000"/>
+
+    <TextView
+        android:id="@+id/tv_coins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/text_content"
+        android:text="我的游戏币:1000"/>
+</LinearLayout>

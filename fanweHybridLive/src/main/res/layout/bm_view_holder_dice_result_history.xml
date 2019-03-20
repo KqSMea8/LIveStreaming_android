@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_marginBottom="5dp"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal">
+
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_latest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="最新"
+            android:gravity="center"
+            android:textSize="9sp"
+            app:layout_marginLeftPercent="12%"
+            app:layout_marginRightPercent="12%"
+            app:layout_marginTopPercent="10%"
+            app:layout_marginBottomPercent="10%"
+            android:textColor="#F6CC92"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:background="@drawable/bm_shape_rec_round_brown"/>
+    </com.zhy.android.percent.support.PercentFrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/bm_selector_dice_result_history" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/iv_middle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/bm_selector_dice_result_history" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/bm_selector_dice_result_history" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>

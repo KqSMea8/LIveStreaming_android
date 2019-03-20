@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bm_layer_white_corner_10dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/ll_base_plugin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/btn_close"
+            android:id="@+id/iv_close"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="印象评价"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:id="@+id/tv_done"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/edit_green"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请用三个词形容该主播:"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+         />
+    <GridView
+        android:id="@+id/gv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="0dp"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="换一批"
+            android:layout_gravity="center"
+            android:background="@drawable/layer_transparent_stroke_gray_corner20dp"
+            android:textColor="@color/red"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:id="@+id/tv_change"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我对TA的印象:"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/rl_memory1"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <com.fanwe.live.view.CornerTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_memory1"
+                    android:layout_gravity="center"
+                    android:textColor="@color/red"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/close1"
+                    android:src="@drawable/ic_close_pressed"
+                    android:layout_height="15dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rl_memory2"
+                android:visibility="visible"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <com.fanwe.live.view.CornerTextView
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_memory2"
+                    android:textColor="@color/red"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/close2"
+                    android:src="@drawable/ic_close_pressed"
+                    android:layout_height="15dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:id="@+id/rl_memory3"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <com.fanwe.live.view.CornerTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tv_memory3"
+                    android:layout_gravity="center"
+                    android:textColor="@color/red"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_close_pressed"
+                    android:id="@+id/close3"
+                    android:layout_height="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:text="为你心中的主播添加评价"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

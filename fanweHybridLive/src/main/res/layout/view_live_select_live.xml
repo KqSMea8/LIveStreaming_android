@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_activity"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color">
+
+        <LinearLayout
+            android:id="@+id/ll_choice_sex_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.fanwe.library.view.SDFitImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_choice_sex_top"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll_choice_sex_top"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_sex_selected_woman"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_sex_selected_woman"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+
+                    android:src="@drawable/ic_choice_sex_female_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sex_selected_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_sex_selected_all"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+
+                    android:src="@drawable/ic_choice_sex_all_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sex_selected_man"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_sex_selected_man"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_choice_sex_male_normal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.fanwe.library.view.SDFitImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_choice_sex_place"
+        />
+
+    <ListView
+        android:id="@+id/lv_city"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="#00000000">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/layer_white_stroke_top"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/layer_transparent_stroke_main_color_corner20dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/main_color"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

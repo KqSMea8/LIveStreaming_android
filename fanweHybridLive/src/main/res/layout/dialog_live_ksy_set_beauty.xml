@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/layer_white_corner"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- 磨皮 -->
+        <LinearLayout
+            android:id="@+id/ll_grind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="磨皮:"
+                android:textColor="@color/text_title"
+                android:textSize="13sp"
+                android:visibility="visible"/>
+            <SeekBar
+                android:id="@+id/sb_grind"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:progressDrawable="@drawable/bg_seekbar_main_color"
+                android:thumb="@drawable/ic_seekbar_thumb_main_color"/>
+
+            <TextView
+                android:id="@+id/tv_grind_percent"
+                style="@style/text_base"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textColor="@color/text_title"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <!-- 美白 -->
+        <LinearLayout
+            android:id="@+id/ll_whiten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美白:"
+                android:textColor="@color/text_title"
+                android:textSize="13sp"/>
+
+            <SeekBar
+                android:id="@+id/sb_whiten"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:progressDrawable="@drawable/bg_seekbar_main_color"
+                android:thumb="@drawable/ic_seekbar_thumb_main_color"/>
+
+            <TextView
+                android:id="@+id/tv_whiten_percent"
+                style="@style/text_base"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textColor="@color/text_title"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <!-- 红润 -->
+        <LinearLayout
+            android:id="@+id/ll_ruddy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/text_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红润:"
+                android:textColor="@color/text_title"
+                android:textSize="13sp"/>
+
+            <SeekBar
+                android:id="@+id/sb_ruddy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:progressDrawable="@drawable/bg_seekbar_main_color"
+                android:thumb="@drawable/ic_seekbar_thumb_main_color"/>
+
+            <TextView
+                android:id="@+id/tv_ruddy_percent"
+                style="@style/text_base"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textColor="@color/text_title"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.fanwe.library.customview.SDGridLinearLayout
+        android:id="@+id/ll_beauty_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

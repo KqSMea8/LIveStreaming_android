@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:minHeight="@dimen/item_live_recharge_rule_min_height"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/base_p_m_10"
+              android:paddingLeft="@dimen/base_p_m_5"
+              android:paddingRight="@dimen/base_p_m_5"
+              android:paddingTop="@dimen/base_p_m_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_pay_dialog"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/base_p_m_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/main_color"
+            android:text="充值其他金额"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/base_textsize_15"/>
+    </LinearLayout>
+
+</LinearLayout>

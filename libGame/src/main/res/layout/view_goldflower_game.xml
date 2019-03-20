@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="236dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_poker_bet_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_poker_bottom"
+            android:background="@drawable/bg_poker_game_panel"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- 扑克牌组区域 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <!-- 扑克牌组0 -->
+                <RelativeLayout
+                    android:id="@+id/view_poker_group_container_0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_poker_group">
+
+                    <com.fanwe.libgame.poker.goldflower.view.GoldFlowerPokerGroupView
+                        android:id="@+id/view_poker_group_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+
+                    <com.fanwe.libgame.poker.view.PokerResultView
+                        android:id="@+id/view_poker_result_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <!-- 扑克牌组1 -->
+                <RelativeLayout
+                    android:id="@+id/view_poker_group_container_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_poker_group">
+
+                    <com.fanwe.libgame.poker.goldflower.view.GoldFlowerPokerGroupView
+                        android:id="@+id/view_poker_group_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+
+                    <com.fanwe.libgame.poker.view.PokerResultView
+                        android:id="@+id/view_poker_result_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <!-- 扑克牌组2 -->
+                <RelativeLayout
+                    android:id="@+id/view_poker_group_container_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_poker_group">
+
+                    <com.fanwe.libgame.poker.goldflower.view.GoldFlowerPokerGroupView
+                        android:id="@+id/view_poker_group_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+
+                    <com.fanwe.libgame.poker.view.PokerResultView
+                        android:id="@+id/view_poker_result_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 投注区域 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <!-- 投注区域0 -->
+                <RelativeLayout
+                    android:id="@+id/view_bet_container_0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_poker_group">
+
+                    <com.fanwe.libgame.poker.view.PokerBetView
+                        android:id="@+id/view_poker_bet_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </RelativeLayout>
+
+                <!-- 投注区域1 -->
+                <RelativeLayout
+                    android:id="@+id/view_bet_container_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_poker_group">
+
+                    <com.fanwe.libgame.poker.view.PokerBetView
+                        android:id="@+id/view_poker_bet_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </RelativeLayout>
+
+                <!-- 投注区域2 -->
+                <RelativeLayout
+                    android:id="@+id/view_bet_container_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_poker_group">
+
+                    <com.fanwe.libgame.poker.view.PokerBetView
+                        android:id="@+id/view_poker_bet_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.fanwe.libgame.view.GameBottomView
+            android:id="@+id/view_poker_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+
+    <com.fanwe.libgame.poker.view.PokerFlyView
+        android:id="@+id/view_poker_fly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- 开牌倒计时 -->
+    <com.fanwe.libgame.poker.view.PokerClockView
+        android:id="@+id/view_clock"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <com.fanwe.libgame.poker.view.PokerToastView
+        android:id="@+id/view_poker_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

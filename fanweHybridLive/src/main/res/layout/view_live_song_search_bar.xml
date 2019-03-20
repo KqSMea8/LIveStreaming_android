@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/search_et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/live_song_search_edittext_shape"
+            android:drawableLeft="@drawable/ic_edit_search_gray"
+            android:drawablePadding="@dimen/base_p_m_5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="搜索歌曲"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingBottom="@dimen/base_p_m_8"
+            android:paddingLeft="@dimen/base_p_m_8"
+            android:paddingRight="30dp"
+            android:paddingTop="@dimen/base_p_m_8"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/search_iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/base_p_m_15"
+            android:src="@drawable/ic_edit_clear"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_white_to_gray_press"
+        android:gravity="center"
+        android:text="搜索"
+        android:textColor="@color/main_color"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_goods_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_podcast_order"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_goods_pic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="【暴走萝莉家】内蒙古特产天美 华乳奶泡 优质"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rel_diamond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txv_goods_name">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_diamond"
+                    android:layout_width="@dimen/image_diamond_size"
+                    android:layout_height="@dimen/image_diamond_size"
+                    android:src="@drawable/ic_diamond"/>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/txv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_diamond"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txv_surplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/rel_diamond"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="已结束"
+                android:textColor="@color/red"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/txv_chongzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值："
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/txv_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txv_chongzhi"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_diamond2"
+                android:layout_width="@dimen/image_diamond_size"
+                android:layout_height="@dimen/image_diamond_size"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/txv_recharge"
+                android:src="@drawable/ic_diamond"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_diamond2"
+                android:src="@drawable/ic_arrow_right_gray"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txv_pay"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_orange_rectangle_radius"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:text="立即付款"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical">
+
+    <com.scottsu.stateslayout.StatesLayout
+        android:id="@+id/view_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.fanwe.live.view.SDPullToRefreshRecyclerView
+            android:id="@+id/view_pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:id="@+id/gv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none"/>
+
+        </com.fanwe.live.view.SDPullToRefreshRecyclerView>
+
+    </com.scottsu.stateslayout.StatesLayout>
+
+</LinearLayout>

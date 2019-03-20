@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 重写 -->
+   <!-- <color name="main_color">#F9DC37</color>-->
+    <color name="main_color">#B857FE</color>
+    <color name="main_color_press">#1c9396</color>
+
+    <!-- new color start -->
+    <color name="btn_disable">#DFDFDF</color>
+
+</resources>

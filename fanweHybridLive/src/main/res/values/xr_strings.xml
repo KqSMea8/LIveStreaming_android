@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="live_diamond">钻石</string>
+    <!--开启鲜肉配置-->
+    <integer name="is_xr_config">1</integer>
+
+    <string name="transition_name_user_head">transition_name_user_head</string>
+    <string name="transition_name_thumb">transition_name_thumb</string>
+    <string name="error_no_more_data">没有更多数据</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="pay">支付</string>
+    <string name="save_to_local">保存到手机</string>
+
+
+    <!--发布动态菜单-->
+    <string name="menu_item_publish_menu_1">出售商品</string>
+    <string name="menu_item_publish_menu_2">红包照片</string>
+    <string name="menu_item_publish_menu_3">出售微信</string>
+    <string name="menu_item_publish_menu_4">写真相册</string>
+    <string name="menu_item_publish_menu_5">图文动态</string>
+    <string name="menu_item_publish_menu_6">视频动态</string>
+
+    <!--登录-->
+    <string name="privacy_policy">《用户隐私政策》</string>
+    <string name="login_phone">手机登录</string>
+    <string name="hint_input_phone_number">请输入手机号码</string>
+    <string name="hint_input_verify_code">请输入验证码</string>
+    <string name="login">登录</string>
+    <string name="error_empty_phone">手机号码不能为空</string>
+    <string name="error_illegal_phone">请输入合法的手机号码</string>
+    <string name="error_empty_verify_code">验证码不能为空</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="second">秒</string>
+    <string name="logining">登录中...</string>
+    <string name="success_login">登录成功</string>
+    <string name="success_authorize">授权成功</string>
+    <string name="failed_authorize">授权失败</string>
+    <string name="cancel_authorize">授权取消</string>
+
+    <!--发布图文动态-->
+    <string name="publish_photo_text">发布图文动态</string>
+    <string name="hint_input_publish_photo_text">这一刻的想法...</string>
+    <string name="publish">发布</string>
+    <string name="location">所在位置</string>
+    <string name="error_empty_push_photo_text">请上传文字或图片</string>
+
+    <!--搜索-->
+    <string name="search">搜索</string>
+    <string name="search_hot_tags">热门搜索</string>
+    <string name="search_history">历史记录</string>
+    <string name="follow">关注</string>
+    <string name="unfollow">取消关注</string>
+    <string name="error_empty_search_keyword">搜索关键字不能为空</string>
+
+    <!--个人中心-->
+    <string name="title_user_center">我的</string>
+    <string name="profit_total">总收益</string>
+    <string name="profit_today">今日收益</string>
+    <string name="fans">粉丝</string>
+    <string name="focus">关注</string>
+    <string name="dynamics">动态</string>
+    <string name="user_purchase">我的购买</string>
+    <string name="buyer_list">买家列表</string>
+    <string name="sell_my_wechat">出售我的微信</string>
+    <string name="unit_yuan">元</string>
+    <string name="unit_photo">张</string>
+    <string name="success_delete">删除成功</string>
+    <string name="success_stick_top">置顶成功</string>
+    <string name="trade_detail">交易明细</string>
+    <string name="hint_user_chat_price_setting">请输入0-100元之间的价格</string>
+    <string name="stick_top">置顶</string>
+    <string name="unstick_top">取消置顶</string>
+    <string name="delete_user_dynamic">删除动态</string>
+    <string name="delete_comment">删除评论</string>
+    <string name="report_dynamic">举报该动态</string>
+    <string name="report_user">举报该用户</string>
+    <string name="add_into_blacklist">拉入黑名单</string>
+    <string name="remove_from_blacklist">解除黑名单</string>
+    <string name="pick_local_image">选择图片</string>
+    <string name="confirm_delete_dynamic">确定删除这一条动态?</string>
+    <string name="chat">聊聊</string>
+    <string name="grant">打赏</string>
+    <string name="add_wechat_state_positive">已添加微信</string>
+    <string name="add_wechat_state_negative">加我微信</string>
+    <string name="follow_state_positive">取消关注</string>
+    <string name="follow_state_negative">+ 关注</string>
+    <string name="success_add_user_blacklist">该用户已成功列入黑名单,你可以在设置界面进行解除</string>
+    <!--<string name="success_remove_user_blacklist">已将该用户移出黑名单</string>-->
+    <!--<string name="success_add_user_blacklist_short">该用户已成功列入黑名单</string>-->
+    <string name="success_report">已收到举报消息,我们将尽快落实处理</string>
+    <string name="tip_blacklist_user">您与对方是拉黑关系，无法进行操作</string>
+    <string name="error_empty_wechat_account">微信账号不能为空</string>
+    <string name="title_user_dynamic_self">我的动态</string>
+    <string name="wechat_on_sell">已上架</string>
+    <string name="user_authentication_description_apply">VIP申请认证</string>
+    <string name="user_authentication_description_authenticated">已认证</string>
+    <string name="user_authentication_description_authenticating">认证审核中</string>
+    <string name="user_authentication_description_unauthenticate">未认证</string>
+    <string name="user_authentication_description_authenticate_rejected">认证审核未通过</string>
+
+
+    <!--用户等级说明-->
+    <string name="level">等级</string>
+    <string name="amount_with_money_unit">金额(元)</string>
+    <string name="title_user_level_description">等级说明</string>
+
+    <!--用户守护贡献榜-->
+    <string name="user_guard_ranking">守护贡献榜</string>
+
+
+    <!--聊天-->
+    <string name="title_frag_chat">聊天</string>
+
+    <!--视频动态详情-->
+    <string name="title_user_dynamic_detail_video">小视频详情</string>
+    <string name="hint_comment_user_dynamic_detail">输入你的评论...</string>
+    <string name="error_empty_content_comment">评论的内容不能为空</string>
+    <string name="publish_comment">发表评论</string>
+    <string name="favorite_users">点赞的人</string>
+    <string name="reply">回复</string>
+    <string name="video_introduce">视频简介</string>
+
+
+    <!--图文动态详情-->
+    <string name="title_user_dynamic_detail_photo_text">图文动态详情</string>
+
+    <!--红包照片动态详情-->
+    <string name="title_user_dynamic_detail_red_pocket_photo">红包照片动态详情</string>
+
+    <!--写真动态详情-->
+    <string name="title_user_dynamic_detail_album">写真动态详情</string>
+
+    <!--商品动态详情-->
+    <string name="title_user_dynamic_detail_goods">商品动态详情</string>
+    <string name="buy_now">立即购买</string>
+
+    <!--弹窗-->
+    <string name="send_red_pocket">发红包</string>
+    <string name="dialog_message_pay_for_red_pocket_photo">发红包,看照片</string>
+    <string name="dialog_message_pay_for_goods">更多精彩资源,与您一同分享</string>
+
+
+    <!--我的收益-->
+    <string name="title_user_profit">我的收益</string>
+    <string name="withdraw_record">提现记录</string>
+    <string name="income_total">总收入</string>
+    <string name="account_balance">提现余额</string>
+    <string name="income_record">收入记录</string>
+    <string name="alipay_withdraw">支付宝提现</string>
+    <string name="withdraw">提现</string>
+    <string name="sign_money_yuan">￥</string>
+    <string name="income_source">收入来源</string>
+    <string name="binding_alipay">绑定支付宝</string>
+    <string name="hint_input_account_alipay">请输入支付宝账号</string>
+    <string name="hint_input_user_name_alipay">请输入支付宝名称</string>
+    <string name="error_info_not_complete">请完整填写信息</string>
+    <string name="apply_withdraw">申请提现</string>
+    <string name="accout_alipay">支付宝账号</string>
+    <string name="error_empty_amount_withdraw">请输入提现金额</string>
+
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:gravity="bottom"
+              android:orientation="horizontal">
+
+    <!-- 发消息 -->
+    <com.fanwe.live.appview.room.RoomMenuView
+        android:id="@+id/menu_send_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 插件中心 -->
+    <com.fanwe.live.appview.room.RoomMenuView
+        android:id="@+id/menu_creater_plugin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <!-- 插件中心 -->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 开始按钮 -->
+        <com.fanwe.live.appview.room.RoomMenuView
+            android:id="@+id/menu_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <!-- 等待按钮 -->
+        <com.fanwe.live.appview.room.RoomMenuView
+            android:id="@+id/menu_waiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <!-- 关闭按钮 -->
+        <com.fanwe.live.appview.room.RoomMenuView
+            android:id="@+id/menu_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-- 显示隐藏底部扩展 -->
+    <com.fanwe.live.appview.room.RoomMenuView
+        android:id="@+id/menu_bottom_extend_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/fl_game_banker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <!-- 上庄按钮 -->
+        <com.fanwe.live.appview.room.RoomMenuView
+            android:id="@+id/menu_open_banker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <!-- 下庄按钮 -->
+        <com.fanwe.live.appview.room.RoomMenuView
+            android:id="@+id/menu_stop_banker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <!-- 打开庄家列表按钮 -->
+        <com.fanwe.live.appview.room.RoomMenuView
+            android:id="@+id/menu_open_banker_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <!-- 付费模式 -->
+    <com.fanwe.live.appview.room.RoomMenuView
+        android:id="@+id/menu_pay_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!-- 付费模式提档 -->
+    <com.fanwe.live.appview.room.RoomMenuView
+        android:id="@+id/menu_pay_mode_upgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <!-- 礼物列表 -->
+    <com.fanwe.live.appview.room.RoomMenuView
+        android:id="@+id/menu_send_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <!-- 私聊消息 -->
+    <com.fanwe.live.appview.room.RoomMenuView
+        android:id="@+id/menu_private_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 分享 -->
+    <com.fanwe.live.appview.room.RoomMenuView
+        android:id="@+id/menu_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- gif动画 -->
+    <FrameLayout
+        android:id="@+id/fl_live_gift_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <!-- 顶部信息 -->
+    <FrameLayout
+        android:id="@+id/fl_live_room_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+
+    <!--主播付费模式-->
+    <FrameLayout
+        android:id="@+id/fl_live_pay_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_live_room_info"
+        android:layout_marginTop="10dp">
+    </FrameLayout>
+
+    <!-- 礼物横向弹出 -->
+    <FrameLayout
+        android:id="@+id/fl_live_gift_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_pop_msg">
+    </FrameLayout>
+
+    <!-- 弹幕 -->
+    <FrameLayout
+        android:id="@+id/fl_live_pop_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_msg"
+        android:layout_marginBottom="10dp">
+    </FrameLayout>
+
+    <!-- 高级用户加入房间特效 -->
+    <FrameLayout
+        android:id="@+id/fl_live_viewer_join_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_msg"
+        android:layout_marginBottom="10dp">
+    </FrameLayout>
+
+    <!-- 聊天信息 -->
+    <FrameLayout
+        android:id="@+id/fl_live_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_play_control">
+    </FrameLayout>
+
+    <!-- 播放组件 -->
+    <FrameLayout
+        android:id="@+id/fl_live_play_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_bottom_menu">
+    </FrameLayout>
+
+    <!-- 底部菜单 -->
+    <FrameLayout
+        android:id="@+id/fl_live_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+    <!-- 发送消息 -->
+    <FrameLayout
+        android:id="@+id/fl_live_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+    <!-- 点亮心心 -->
+    <FrameLayout
+        android:id="@+id/fl_live_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp">
+    </FrameLayout>
+
+    <!-- 送礼物 -->
+    <FrameLayout
+        android:id="@+id/fl_live_send_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_live_wawa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </FrameLayout>
+</RelativeLayout>

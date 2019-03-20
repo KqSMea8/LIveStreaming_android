@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--牌组背景颜色-->
+    <color name="bg_poker_group">#60000000</color>
+    <!--时钟倒计时文字颜色-->
+    <color name="text_poker_clock_number">#D34B25</color>
+
+    <!--游戏底部“充值”字体的颜色-->
+    <color name="text_poker_recharge">#FEB102</color>
+    <!--游戏底部投注游戏币面额可用字体的颜色-->
+    <color name="text_poker_bet_coins_number_enable">#FEB102</color>
+    <!--游戏底部投注游戏币面额不可用字体的颜色-->
+    <color name="text_poker_bet_coins_number_disabled">@color/gray</color>
+
+    <!--游戏投注区域总的投注字体的颜色-->
+    <color name="text_poker_total_bet">#FDECA8</color>
+    <!--游戏投注区域我的投注字体的颜色-->
+    <color name="text_poker_my_bet">#FEB102</color>
+    <!--游戏投注区域倍数-->
+    <color name="text_poker_bet_multiple">#0D2F2D</color>
+    <!--游戏投注区域底部暗色横条的颜色-->
+    <color name="bg_poker_bet_bottom">#80000000</color>
+</resources>

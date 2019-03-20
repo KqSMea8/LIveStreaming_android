@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/base_p_m_5"
+    android:stateListAnimator="@drawable/bm_selector_press_scale_out">
+
+    <com.fanwe.library.view.CircleImageView
+        android:id="@+id/iv_thumb_game_room_friends"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:civ_border_color="#aaffffff"
+        app:civ_border_width="2dp"/>
+
+    <TextView
+        android:id="@+id/tv_name_game_room_friends"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bm_shape_bg_rec_circle"
+        android:gravity="center"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="#91341D"
+        android:textSize="8sp"/>
+</FrameLayout>

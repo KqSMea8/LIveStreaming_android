@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_good"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/skeleton_progress_loading_image_01"
+            android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VDL贝壳珍珠保湿妆前乳"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/img_diamond"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_main_color_my_account"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_toRightOf="@+id/img_diamond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250000"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/tv_set_auction"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="设为拍卖"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:background="@drawable/bg_white_rectangle_radius"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

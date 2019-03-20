@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.fanwe.live.appview.LiveCropImageView
+        android:id="@+id/crop_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.fanwe.live.appview.LiveCropImageView>
+
+</LinearLayout>

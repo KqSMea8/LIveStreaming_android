@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.fanwe.live.music.lrc.PlayMusicView
+        android:id="@+id/view_play_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_p_m_8"
+        android:layout_marginRight="@dimen/base_p_m_8" />
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/iv_pk"
+        android:layout_width="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        android:src="@drawable/icon_finish_pk" />
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="10dp"
+        android:background="@drawable/bg_pk_userinfo"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp">
+
+
+        <com.fanwe.library.view.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_pk_head_image"
+            android:layout_width="@dimen/width_live_pk_head_image"
+            android:layout_height="@dimen/width_live_pk_head_image"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_default_head"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="0dp" />
+
+        <TextView
+            android:id="@+id/tv_pk_name"
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+        <TextView
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="去TA房间"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/pro"
+        android:layout_marginBottom="216dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/iv_left"
+                android:src="@drawable/bg_live_pk_schedule_me_01" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="16dp">
+                <View
+                    android:id="@+id/pro_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:background="@drawable/bg_live_pk_schedule_me_02"></View>
+
+                <View
+                    android:id="@+id/pro_right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:background="@drawable/bg_live_pk_schedule_other_01"></View>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:id="@+id/iv_right"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_live_pk_schedule_other_02" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_number"
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_pk_num"
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_pk_time"
+        style="@style/text_base_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pro"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginBottom="5dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/layer_blur_live_ticket"
+        android:text="距离结束：xxxx"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</RelativeLayout>

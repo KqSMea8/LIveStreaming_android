@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <com.fanwe.live.view.SDSlidingButton
+        android:id="@+id/sl_btn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg_live_pop_msg_normal" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg_live_pop_msg_selected" />
+
+        <ImageView
+            android:id="@+id/iv_pop_msg_handle"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/bg_live_pop_msg_handle_normal" />
+    </com.fanwe.live.view.SDSlidingButton>
+
+    <EditText
+        android:id="@+id/et_content"
+        style="@style/edit_base"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:imeOptions="flagNoFullscreen|actionSend"
+        android:background="@drawable/layer_white_stroke_corner_item_single"
+        android:hint="@string/live_send_msg_hint_normal"
+        android:minHeight="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_send"
+        style="@style/btn_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/selector_main_color_corner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="发送"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

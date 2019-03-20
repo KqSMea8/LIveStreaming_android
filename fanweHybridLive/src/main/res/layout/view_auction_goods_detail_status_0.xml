@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/auction_main_color"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="当前价"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:layout_width="@dimen/image_diamond_size"
+                android:layout_height="@dimen/image_diamond_size"
+                android:layout_gravity="right"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_diamond"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_last_pai_diamonds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_price_text"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/auction_layer_yellow_left_round"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="竞拍剩余时间"
+            android:textColor="@color/text_title"
+            android:textSize="13sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@color/auction_time_bg_color"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1.5dp"
+                android:text=":"
+                android:textColor="@color/text_title"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="1.5dp"
+                android:background="@color/auction_time_bg_color"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1.5dp"
+                android:text=":"
+                android:textColor="@color/text_title"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_sec"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="1.5dp"
+                android:background="@color/auction_time_bg_color"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

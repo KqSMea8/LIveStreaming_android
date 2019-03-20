@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fl_animator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_gift_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="60dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:maxWidth="150dp"
+            android:text="礼物"
+            android:textColor="@color/live_msg_send_gift_animator"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_anim_plane1_body"/>
+
+        <ImageView
+            android:id="@+id/iv_screw1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/ic_anim_plane1_screw"/>
+
+        <ImageView
+            android:id="@+id/iv_screw2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="29dp"
+            android:src="@drawable/ic_anim_plane1_screw"/>
+
+        <ImageView
+            android:id="@+id/iv_screw3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="101dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/ic_anim_plane1_screw"/>
+
+        <ImageView
+            android:id="@+id/iv_screw4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="61dp"
+            android:src="@drawable/ic_anim_plane1_screw"/>
+    </FrameLayout>
+
+
+</LinearLayout>

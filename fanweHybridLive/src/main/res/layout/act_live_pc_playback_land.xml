@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/rl_root_view"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+    android:background="@color/white"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_container_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/danmaku_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.fanwe.live.appview.room.RoomPCPlaybackLandControlView
+        android:id="@+id/view_control_land"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

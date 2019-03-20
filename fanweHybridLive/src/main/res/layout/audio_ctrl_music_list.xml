@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:ignore="contentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title_simple" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.fanwe.library.view.SDTabText
+                android:id="@+id/tab_left"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@color/stroke_deep" />
+
+            <com.fanwe.library.view.SDTabText
+                android:id="@+id/tab_center"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@color/stroke_deep" />
+
+            <com.fanwe.library.view.SDTabText
+                android:id="@+id/tab_right"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/stroke" />
+
+        <com.fanwe.shortvideo.videorecord.MusicListView
+            android:id="@+id/xml_music_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+        </com.fanwe.shortvideo.videorecord.MusicListView>
+    </LinearLayout>
+    <com.fanwe.shortvideo.videorecord.SearchMusicView
+        android:id="@+id/search_music_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

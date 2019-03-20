@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- 顶部信息 -->
+    <FrameLayout
+        android:id="@+id/fl_live_room_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
+    <!-- gif动画 -->
+    <FrameLayout
+        android:id="@+id/fl_live_gift_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_live_gift_gif2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <!-- gif动画 -->
+    <FrameLayout
+        android:id="@+id/fl_live_gift_gif3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <!--竞拍排名倒计时-->
+    <FrameLayout
+        android:id="@+id/fl_live_auction_rank_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fl_live_room_info"
+        android:layout_marginTop="10dp">
+    </FrameLayout>
+
+    <!--竞拍,上庄-->
+    <LinearLayout
+        android:id="@+id/ll_auction_banker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_live_room_info"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <!--竞拍信息(最高价和剩余时间)-->
+        <FrameLayout
+            android:id="@+id/fl_live_auction_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+        <!-- 上庄信息-->
+        <FrameLayout
+            android:id="@+id/fl_container_banker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--主播付费模式-->
+    <FrameLayout
+        android:id="@+id/fl_live_pay_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_auction_banker"
+        android:layout_marginTop="10dp">
+    </FrameLayout>
+
+    <!-- 弹幕 -->
+    <FrameLayout
+        android:id="@+id/fl_live_pop_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_msg"
+        android:layout_marginBottom="10dp">
+    </FrameLayout>
+
+    <!--购物商品推送-->
+    <FrameLayout
+        android:id="@+id/fl_live_goods_push"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_viewer_join_room"
+        android:layout_marginBottom="10dp">
+    </FrameLayout>
+    <!-- 礼物横向弹出 -->
+    <FrameLayout
+        android:id="@+id/fl_live_gift_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/fl_live_viewer_join_room"
+        >
+    </FrameLayout>
+    <!-- 高级用户加入房间特效 -->
+    <FrameLayout
+        android:id="@+id/fl_live_viewer_join_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_msg"
+        android:layout_marginBottom="10dp">
+    </FrameLayout>
+
+    <!-- 聊天信息 -->
+    <FrameLayout
+        android:id="@+id/fl_live_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_bottom_menu">
+    </FrameLayout>
+
+
+
+    <!--关闭直播-->
+    <FrameLayout
+        android:id="@+id/fl_live_close_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_live_bottom_menu"
+        android:layout_alignParentRight="true"/>
+
+    <!-- 底部菜单 -->
+    <FrameLayout
+        android:id="@+id/fl_live_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_bottom_extend">
+    </FrameLayout>
+
+    <!-- 发送消息 -->
+    <FrameLayout
+        android:id="@+id/fl_live_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+    <!-- 游戏 -->
+    <FrameLayout
+        android:id="@+id/fl_live_games_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+    <!-- 底部扩展 -->
+    <com.fanwe.library.view.SDReplaceableLayout
+        android:id="@+id/fl_bottom_extend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </com.fanwe.library.view.SDReplaceableLayout>
+
+    <!-- 点亮心心 -->
+    <FrameLayout
+        android:id="@+id/fl_live_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp">
+    </FrameLayout>
+    <!-- 送礼物 -->
+    <FrameLayout
+        android:id="@+id/fl_live_send_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    </FrameLayout>
+    <!-- 播放音乐 -->
+    <com.fanwe.library.view.SDDragRelativeLayout
+        android:id="@+id/fl_live_play_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.fanwe.library.view.SDDragRelativeLayout>
+    <FrameLayout
+        android:id="@+id/fl_live_wawa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </FrameLayout>
+</RelativeLayout>

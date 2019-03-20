@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 区域版本 -->
+    <string name="config_region_version">config_region_version</string>
+
+    <!-- session_id -->
+    <string name="config_session_id">config_session_id</string>
+
+    <!-- 保存登录用户名 -->
+    <string name="config_user_name">config_user_name</string>
+
+    <!-- 推荐人id -->
+    <string name="config_ref_id">config_ref_id</string>
+
+    <!-- 图形验证码 -->
+    <string name="config_image_code">config_image_code</string>
+
+    <!-- webview_cookie -->
+    <string name="config_webview_cookie">config_webview_cookie</string>
+
+    <!-- usersig -->
+    <string name="config_live_usersig">config_live_usersig</string>
+
+    <!-- 热门性别筛选 -->
+    <string name="config_live_select_sex">config_live_select_sex</string>
+
+    <!-- 热门区域筛选 -->
+    <string name="config_live_select_city">config_live_select_city</string>
+
+    <!-- 购物Session -->
+    <string name="shopping_session_id">shopping_session</string>
+
+    <!-- 是否直接开启应用，则删除视频缩小功能 -->
+    <bool name="is_directly_open_the_live_app">false</bool>
+</resources>

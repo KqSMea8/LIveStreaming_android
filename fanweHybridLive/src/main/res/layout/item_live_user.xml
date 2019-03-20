@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <com.fanwe.library.view.CircleImageView
+        android:id="@+id/iv_pic"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/width_live_viewer_head_image"
+        android:layout_height="@dimen/height_live_viewer_head_image"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_default_head"
+        app:civ_border_color="@color/main_color_second"
+        app:civ_border_width="0dp"/>
+
+    <com.fanwe.library.view.CircleImageView
+        android:id="@+id/iv_level"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/ic_default_head"
+        android:layout_alignTop="@+id/iv_pic"
+        android:layout_alignRight="@+id/iv_pic"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="0dp"/>
+        <TextView
+            android:textSize="8sp"
+            android:id="@+id/tv_ticket"
+            android:layout_width="30dp"
+            android:background="@drawable/layer_blur_live_ticket"
+            android:layout_alignBottom="@+id/iv_pic"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="44.2万"
+            android:visibility="invisible"
+            android:textColor="@color/yellow"
+            android:layout_height="wrap_content" />
+</RelativeLayout>

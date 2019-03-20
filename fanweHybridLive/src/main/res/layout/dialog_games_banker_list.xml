@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layer_white_solid_10dp_corner"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/dialog_progress"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:textSize="18sp"
+        android:textColor="@color/text_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:text="暂无数据"/>
+
+
+
+    <ListView
+        android:id="@+id/lv_banker_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@drawable/selector_white_to_gray_press"
+        android:divider="@color/stroke"
+        android:scrollbars="none"/>
+</FrameLayout>

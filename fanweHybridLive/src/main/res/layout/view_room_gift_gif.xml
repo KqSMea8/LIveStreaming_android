@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_animatior_gift_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.fanwe.live.view.LiveGiftGifPlayView
+            android:id="@+id/view_gif0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.fanwe.live.view.LiveGiftGifPlayView
+            android:id="@+id/view_gif1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.fanwe.live.view.LiveGiftGifPlayView
+            android:id="@+id/view_gif2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.fanwe.live.view.LiveGiftGifPlayView
+            android:id="@+id/view_gif3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.fanwe.live.view.LiveGiftGifPlayView
+            android:id="@+id/view_gif4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</FrameLayout>

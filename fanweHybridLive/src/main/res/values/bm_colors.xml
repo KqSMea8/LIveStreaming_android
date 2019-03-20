@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页标题栏颜色 -->
+    <color name="bm_color_bg_home_tab">@color/main_color</color>
+    <!--开始直播-->
+    <color name="bm_color_start_live_normal">@color/main_color</color>
+    <color name="bm_color_start_live_selected">@color/white</color>
+    <!--输入口令-->
+    <color name="bm_color_enter_password">@color/text_black</color>
+    <!--输入口令数字-->
+    <color name="bm_color_enter_password_num">@color/text_black</color>
+    <!--排行榜Tab-->
+    <color name="bm_color_rank_list_tab_normal">@color/text_title_bar</color>
+    <color name="bm_color_rank_list_tab_selected">@color/text_title_bar</color>
+
+    <!--个人中心 游戏房间-->
+    <color name="bm_color_game_list_text">@color/text_black</color>
+    <color name="bm_color_game_list_title">@color/text_black</color>
+    <!--插件开启-->
+    <color name="bm_color_tv_open_game">@color/text_black</color>
+    <!--邀请好友加入-->
+    <color name="bm_color_btn_invite">@color/text_black</color>
+</resources>

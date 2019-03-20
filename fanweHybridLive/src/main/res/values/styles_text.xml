@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="text_base">
+        <item name="android:text">@string/loading</item>
+        <item name="android:textColor">@color/text_content</item>
+        <item name="android:textSize">@dimen/text_content</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="text_editStyle" >
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:background">@drawable/verify_edittext_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#b5b5b6</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+    <style name="text_base_shadow" parent="text_base">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowDy">2</item>
+    </style>
+
+    <style name="edit_base">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:minHeight">@dimen/height_edit</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="text_title" parent="text_base">
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">@dimen/text_title</item>
+    </style>
+
+    <style name="text_content" parent="text_base">
+        <item name="android:textColor">@color/text_content</item>
+        <item name="android:textSize">@dimen/text_content</item>
+    </style>
+
+    <style name="text_item_title" parent="text_base">
+        <item name="android:textColor">@color/text_item_title</item>
+        <item name="android:textSize">@dimen/text_item_title</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_item_content" parent="text_base">
+        <item name="android:textColor">@color/text_item_content</item>
+        <item name="android:textSize">@dimen/text_item_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_nick_name" parent="text_base">
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/text_nick_name</item>
+        <item name="android:maxWidth">170dp</item>
+    </style>
+
+    <style name="text_introduce" parent="text_base">
+        <item name="android:maxLines">2</item>
+        <item name="android:text">TA好像忘记写签名了</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_nick_name</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+</resources>

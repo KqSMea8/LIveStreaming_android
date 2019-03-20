@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.fanwe.libgame.poker.goldflower.view.GoldFlowerPokerView
+        android:id="@+id/view_poker_0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:layout_widthPercent="52%w"/>
+
+    <com.fanwe.libgame.poker.goldflower.view.GoldFlowerPokerView
+        android:id="@+id/view_poker_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        app:layout_widthPercent="52%w"/>
+
+    <com.fanwe.libgame.poker.goldflower.view.GoldFlowerPokerView
+        android:id="@+id/view_poker_2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        app:layout_widthPercent="52%w"/>
+
+</com.zhy.android.percent.support.PercentFrameLayout>

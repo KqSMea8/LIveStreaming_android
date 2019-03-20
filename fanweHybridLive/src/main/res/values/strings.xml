@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loading">加载中</string>
+    <string name="live_msg_title">直播消息:</string>
+    <string name="live_msg_auction_title">竞拍消息:</string>
+    <string name="live_msg_shopping_title">购物消息:</string>
+    <string name="live_creater_leave">主播离开一下，精彩不中断，不要走开哦</string>
+    <string name="live_creater_come_back">主播回来啦，视频即将恢复</string>
+    <string name="live_light">我点亮了</string>
+    <string name="live_send_msg_hint_normal">和大家说点什么</string>
+    <string name="live_account">帐号</string>
+    <string name="live_ticket">秀豆</string>
+    <string name="live_account_authentication">我的</string>
+    <!-- 首页关注标签文字-->
+    <string name="live_tab_follow_text">关注</string>
+    <string name="live_tab_hot_text">热门</string>
+    <string name="live_tab_new_text">附近</string>
+    <!-- PC端直播间标签文字-->
+    <string name="room_pc_tab_chat_text">聊天</string>
+    <string name="room_pc_tab_con_text">贡献榜</string>
+    <string name="room_pc_tab_live_text">直播</string>
+    <!--排行榜-->
+    <string name="live_ranking_tab_merits_text">收入榜</string>
+    <string name="live_ranking_tab_contribution_text">消费榜</string>
+    <!--充值页面-->
+    <string name="live_recharge_exchange">充值</string>
+    <!-- 编辑页面-情感状态字段-->
+    <string-array name="affective_state">
+        <item>保密</item>
+        <item>单身</item>
+        <item>恋爱中</item>
+        <item>已婚</item>
+        <item>同性</item>
+    </string-array>
+    <string-array name="sp_pk_time">
+        <item>选择PK时间</item>
+        <item>1分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>30分钟</item>
+    </string-array>
+    <string-array name="gift_text">
+        <item>一心一意(1)</item>
+        <item>由衷赞赏(5)</item>
+        <item>十全十美(10)</item>
+        <item>浪漫邂逅(20)</item>
+        <item>V(50)</item>
+        <item>笑脸(100)</item>
+        <item>爱你久久(299)</item>
+        <item>我爱你(520)</item>
+    </string-array>
+    <integer-array name="gift_num">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>299</item>
+        <item>520</item>
+    </integer-array>
+    <string name="game_currency">游戏币</string>
+    <string name="exchange_game_currency">兑换游戏币</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share_content">“宇宙不爆炸，直播就不下”风里雨里我在千秀开播要撩你</string>
+
+    <string name="live_pk_hint">输入主播昵称或ID</string>
+    <string name="show_focus">喜欢主播点关注，关注主播不迷路！</string>
+    <!--<string name="time_limit">&#061</string>-->
+</resources>

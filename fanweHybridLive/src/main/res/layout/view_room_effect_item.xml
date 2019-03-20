@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:layout_width="50dp"
+    android:layout_height="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:text="圆润"
+    android:gravity="center"
+    android:background="@drawable/bg_room_effect_circle_item_nor"
+    android:textColor="@android:color/white"
+
+    />

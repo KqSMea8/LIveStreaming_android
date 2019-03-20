@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="54dp"
+    android:background="@drawable/bg_banker_info"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <com.fanwe.library.view.CircleImageView
+        android:id="@+id/iv_user_img"
+        android:layout_marginLeft="3dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/icon_me_male"/>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_banker_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minWidth="150dp"
+            android:maxWidth="200dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="王尼玛21345465456156161123123"/>
+        
+        <TextView
+            android:id="@+id/tv_banker_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="剩余底金:12345456"/>
+    </LinearLayout>
+</LinearLayout>

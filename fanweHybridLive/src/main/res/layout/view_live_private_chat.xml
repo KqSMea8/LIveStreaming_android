@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title_simple"/>
+
+        <com.fanwe.live.view.SDProgressPullToRefreshRecyclerView
+            android:id="@+id/lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/bg_activity"
+            android:divider="@null"
+            android:listSelector="#00000000"/>
+
+        <com.fanwe.live.appview.LivePrivateChatBarView
+            android:id="@+id/view_chat_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <com.fanwe.live.appview.LivePrivateChatRecordView
+        android:id="@+id/view_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!-- 底部扩展布局 -->
+    <com.fanwe.library.view.SDReplaceableLayout
+        android:id="@+id/fl_bottom_extend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

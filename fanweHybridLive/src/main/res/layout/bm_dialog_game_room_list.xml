@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_p_m_15"
+            android:paddingTop="@dimen/base_p_m_15"
+            android:text="@string/room_number"
+            android:textColor="@color/text_cont_item"
+            android:textSize="@dimen/text_content"/>
+
+        <View
+            android:layout_width="@dimen/base_stroke_1px"
+            android:layout_height="match_parent"
+            android:background="#33666666"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_p_m_15"
+            android:paddingTop="@dimen/base_p_m_15"
+            android:text="@string/live_ceater_nick_name"
+            android:textColor="@color/text_cont_item"
+            android:textSize="@dimen/text_content"/>
+
+        <View
+            android:layout_width="@dimen/base_stroke_1px"
+            android:layout_height="match_parent"
+            android:background="#33666666"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_p_m_15"
+            android:paddingTop="@dimen/base_p_m_15"
+            android:text="@string/number_of_people"
+            android:textColor="@color/text_cont_item"
+            android:textSize="@dimen/text_content"/>
+
+        <View
+            android:layout_width="@dimen/base_stroke_1px"
+            android:layout_height="match_parent"
+            android:background="#33666666"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <View
+            android:layout_width="@dimen/base_stroke_1px"
+            android:layout_height="match_parent"
+            android:background="#33666666"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_stroke_1px"
+        android:background="#33666666"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_game_room_list"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:overScrollMode="never"/>
+
+    <Button
+        android:id="@+id/btn_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="@dimen/base_p_m_15"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="@dimen/base_p_m_15"
+        android:background="@drawable/bm_shape_bg_button"
+        android:text="@string/refresh_list"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dialog_button"/>
+
+</LinearLayout>

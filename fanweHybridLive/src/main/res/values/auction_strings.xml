@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 竞拍锤子秒数-->
+    <integer name="auction_btn_time">3</integer>
+    <!-- 是否开启虚拟竞拍-->
+    <integer name="pai_virtual_btn">0</integer>
+    <!--是否显示星店管理-->
+    <bool name="is_show_btn_shop">true</bool>
+</resources>

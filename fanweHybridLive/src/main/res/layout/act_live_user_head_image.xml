@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:fitsSystemWindows="true"
+             android:background="@color/bg_activity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+            <com.fanwe.library.view.SDFitImageView
+                android:id="@+id/iv_head_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/selector_main_color_to_main_color_press_50dp_corner"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/iv_leave"
+        android:layout_margin="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:background="@drawable/selector_user_portrait_back" />
+
+</FrameLayout>

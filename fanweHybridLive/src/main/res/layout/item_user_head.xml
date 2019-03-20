@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content" >
+
+    <com.fanwe.library.view.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/civ_head_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_default_head"
+        app:civ_border_color="@null"
+        app:civ_border_width="0dp" />
+
+    <ImageView
+        android:id="@+id/civ_v_icon"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/icon_w" />
+</FrameLayout>

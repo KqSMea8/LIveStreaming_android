@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:clipChildren="false" >
+
+    <ImageView
+        android:id="@+id/iv_close_push"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bm_ic_close_push"/>
+
+</FrameLayout>

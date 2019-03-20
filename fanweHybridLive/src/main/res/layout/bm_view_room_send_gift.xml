@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.fanwe.library.view.select.SDSelectViewGroup
+        android:id="@+id/svg_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#99000000"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.fanwe.library.view.SDTabUnderline
+            android:id="@+id/view_tab_diamond"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.fanwe.library.view.SDTabUnderline
+            android:id="@+id/view_tab_coin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </com.fanwe.library.view.select.SDSelectViewGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_container_send_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

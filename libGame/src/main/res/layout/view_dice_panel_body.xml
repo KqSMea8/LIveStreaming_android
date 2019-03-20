@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="3dp">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_dice_panel_top"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+            <com.fanwe.libgame.dice.view.DiceScoreBoardBigView
+                android:id="@+id/view_dice_score_board_big_view_dice_panel_body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_marginBottomPercent="20%"
+                app:layout_marginLeftPercent="2%"
+                android:clipChildren="false"
+                app:layout_marginTopPercent="20%"/>
+
+            <com.fanwe.libgame.dice.view.DiceScoreBoardMiddleView
+                android:id="@+id/view_dice_score_board_middle_view_dice_panel_body"
+                android:layout_width="0dp"
+                android:clipChildren="false"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:layout_marginBottomPercent="20%"
+                app:layout_marginTopPercent="20%"/>
+
+            <com.fanwe.libgame.dice.view.DiceScoreBoardSmallView
+                android:id="@+id/view_dice_score_board_small_view_dice_panel_body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clipChildren="false"
+                app:layout_marginBottomPercent="20%"
+                app:layout_marginRightPercent="2%"
+                app:layout_marginTopPercent="20%"/>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.fanwe.libgame.dice.view.DiceAnimView
+            android:id="@+id/view_dice_anim_view_dice_panel_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

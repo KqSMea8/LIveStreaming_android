@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/height_title_bar"
+              android:background="@color/bg_title_bar"
+              android:gravity="center_vertical">
+
+    <include layout="@layout/include_live_title_bar_back"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.fanwe.library.view.SDTabUnderline
+            android:layout_weight="1"
+            android:id="@+id/tab_rank_merits"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+
+        <com.fanwe.library.view.SDTabUnderline
+            android:layout_weight="1"
+            android:id="@+id/tab_rank_contribution"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_white_to_gray_press"
+        android:orientation="vertical">
+    </RelativeLayout>
+
+</LinearLayout>

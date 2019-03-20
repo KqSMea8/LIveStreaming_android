@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--游戏主页-->
+    <string name="online">在线</string>
+    <string name="unit_online_count">人</string>
+    <string name="play">玩</string>
+
+    <!--输入口令弹窗-->
+    <string name="input_room_code">输入口令</string>
+    <string name="reset">重置</string>
+    <string name="delete">删除</string>
+    <string name="room_code">口令</string>
+
+    <!--创建房间成功弹窗-->
+    <string name="tip">提示</string>
+    <string name="tip_room_code_1">1.私人房间不会出现在列表中.</string>
+    <string name="tip_room_code_2">2.您的朋友可以通过房间号码来和您一起游戏.</string>
+    <string name="tip_room_code_3">3.分享房间可以马上邀请好友.</string>
+    <string name="invite_friends_in">邀请好友加入</string>
+    <string name="success_create">创建成功</string>
+    <string name="enter_room_without_invite">暂不邀请,先进入房间</string>
+    <string name="join">加入</string>
+
+    <!--创建房间列表弹窗-->
+    <string name="refresh_list">刷新列表</string>
+    <string name="live_ceater_nick_name">主播昵称</string>
+    <string name="room_number">房间号</string>
+    <string name="number_of_people">人数</string>
+
+
+    <!--游戏主页-END-->
+
+
+    <!--每日任务弹窗-->
+    <string name="daily_tasks">每日任务</string>
+    <string name="award">奖励</string>
+    <string name="receive">领取</string>
+
+    <!--猜大小-->
+    <string name="winner_round">本轮大赢家</string>
+
+
+
+</resources>

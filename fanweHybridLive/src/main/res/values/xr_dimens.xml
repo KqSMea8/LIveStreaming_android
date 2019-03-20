@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="height_tab_main">55dp</dimen>
+
+    <dimen name="height_button_s">35dp</dimen>
+    <dimen name="height_button_m">40dp</dimen>
+    <dimen name="height_button_l">45dp</dimen>
+
+    <dimen name="height_icon_xs">12dp</dimen>
+    <dimen name="height_icon_s">14dp</dimen>
+    <dimen name="height_icon_m">24dp</dimen>
+    <dimen name="height_icon_l">36dp</dimen>
+    <dimen name="height_icon_xl">52dp</dimen>
+
+    <dimen name="text_size_button">14sp</dimen>
+    <dimen name="text_size_menu">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+    <dimen name="text_size_body">14sp</dimen>
+    <dimen name="text_size_subhead">16sp</dimen>
+    <!--<dimen name="text_size_title">20sp</dimen>-->
+    <dimen name="text_size_headline">24sp</dimen>
+    <dimen name="text_size_display_1">34sp</dimen>
+    <dimen name="text_size_display_2">45sp</dimen>
+    <dimen name="text_size_display_3">56sp</dimen>
+    <dimen name="text_size_display_4">112sp</dimen>
+
+    <!--margin-->
+    <dimen name="margin_xxs">4dp</dimen>
+    <dimen name="margin_xs">10dp</dimen>
+    <dimen name="margin_s">16dp</dimen>
+    <dimen name="margin_m">32dp</dimen>
+    <dimen name="margin_l">56dp</dimen>
+    <dimen name="margin_xl">72dp</dimen>
+    <dimen name="margin_xxl">96dp</dimen>
+
+    <!--height-->
+    <dimen name="height_divider_line_s">1dp</dimen>
+    <dimen name="height_divider_line_m">1dp</dimen>
+    <dimen name="height_item_xs">24dp</dimen>
+    <dimen name="height_item_s">48dp</dimen>
+    <dimen name="height_item_m">56dp</dimen>
+    <dimen name="height_item_l">64dp</dimen>
+    <dimen name="height_item_xl">72dp</dimen>
+
+    <!--发布按钮高度-->
+    <dimen name="publish_height_button">40dp</dimen>
+
+    <dimen name="height_user_head_l">40dp</dimen>
+    <dimen name="height_user_head_user_dynamic">@dimen/height_user_head_l</dimen>
+    <dimen name="height_user_head_user_center">90dp</dimen>
+    <dimen name="width_button_dialog_short">130dp</dimen>
+
+    <dimen name="height_image_showcase_user_center">70dp</dimen>
+    <dimen name="height_image_top_user_center">200dp</dimen>
+
+    <dimen name="res_text_l">16sp</dimen>
+    <dimen name="res_text_m">14sp</dimen>
+    <dimen name="res_text_s">12sp</dimen>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_reset"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@drawable/room_effect_default"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="音效调节"
+            android:textColor="@color/text_title"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@drawable/room_effect_close"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/stroke"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal"
+        android:paddingBottom="16.0dip"
+        android:paddingTop="16.0dip">
+
+        <LinearLayout style="@style/room_eq_middle_item">
+
+            <com.fanwe.live.view.VerticalSeekBar
+                android:id="@+id/sb_bz"
+                style="@style/room_eq_vertical_seekbar"
+                android:max="100"/>
+
+            <TextView
+                style="@style/room_eq_effect_name"
+                android:text="伴奏"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/room_eq_middle_item">
+
+            <com.fanwe.live.view.VerticalSeekBar
+                android:id="@+id/sb_mic"
+                style="@style/room_eq_vertical_seekbar"
+                android:max="100"
+            />
+
+            <TextView
+                style="@style/room_eq_effect_name"
+                android:text="人声"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

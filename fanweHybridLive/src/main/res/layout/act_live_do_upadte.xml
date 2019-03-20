@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_activity"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <com.fanwe.library.view.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:id="@+id/iv_head"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_marginTop="30dp"
+                                            android:src="@drawable/ic_default_head"
+                                            app:civ_border_color="@color/white"
+                                            app:civ_border_width="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="上传您的个人头像"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:hint="输入您的昵称"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:paddingLeft="20dp"
+        android:textColor="@color/text_user_home"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_text_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/text_user_home"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/16"
+            android:textColor="@color/text_user_home"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.fanwe.library.view.SDTabImage
+            android:id="@+id/tab_male"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="性别"
+            android:textColor="@color/text_user_home"
+            android:textSize="12sp"/>
+
+
+        <com.fanwe.library.view.SDTabImage
+            android:id="@+id/tab_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_main_color_to_main_color_press_50dp_corner"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

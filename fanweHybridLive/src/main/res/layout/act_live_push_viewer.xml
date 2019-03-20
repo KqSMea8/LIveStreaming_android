@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_live_normal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_bm_live_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_bkg"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_small_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_view_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.fanwe.live.appview.LiveVideoView
+                android:id="@+id/view_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.fanwe.live.appview.LiveLinkMicGroupView
+        android:id="@+id/view_link_mic_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/view_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.fanwe.live.view.SDVerticalScollView
+        android:id="@+id/view_vertical_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.fanwe.live.view.SDVerticalScollView>
+    <!-- 关闭按钮 -->
+    <com.fanwe.live.appview.room.RoomCloseView
+        android:id="@+id/close_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+    <include
+        android:id="@+id/rl_root_layout"
+        layout="@layout/include_live_layout_viewer_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/view_loading_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_loading_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pay_bg_black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</RelativeLayout>

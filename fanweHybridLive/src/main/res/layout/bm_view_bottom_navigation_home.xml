@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="bottom"
+             android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/height_bottom_navigation"
+        android:background="#20888888"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_navigation"
+        android:layout_gravity="bottom"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_navigation"
+        android:layout_gravity="bottom|center_vertical"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lv_tab_live_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_live_center"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bm_selector_tab_home"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_out" />
+
+            <TextView
+                android:id="@+id/tv_tab_live_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="首页"
+                android:visibility="gone"
+                android:textSize="@dimen/base_textsize_10" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lv_tab_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_attention"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bm_selector_tab_video"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_out" />
+
+            <TextView
+                android:id="@+id/tv_tab_attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:text="小视频"
+                android:textSize="@dimen/base_textsize_10" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lv_tab_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_live"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_live"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_out" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lv_game_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_game_center"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bm_selector_tab_game"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_out" />
+
+            <TextView
+                android:id="@+id/tv_tab_game_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:text="游戏"
+                android:textSize="@dimen/base_textsize_10" />
+        </LinearLayout>
+        <!-- android:background="@drawable/bm_selector_tab_game"-->
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lv_person_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_person_center"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bm_selector_tab_person"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_out" />
+
+            <TextView
+                android:id="@+id/tv_tab_person_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:text="我的"
+                android:textSize="@dimen/base_textsize_10" />
+        </LinearLayout>
+        <!-- android:background="@drawable/bm_selector_tab_game"-->
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

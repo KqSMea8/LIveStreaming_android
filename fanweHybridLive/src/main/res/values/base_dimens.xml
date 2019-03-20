@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 圆角 -->
+    <dimen name="base_corner_10">10dp</dimen>
+
+    <!-- 常用分割线 -->
+    <dimen name="base_stroke_1dp">1dp</dimen>
+    <dimen name="base_stroke_1px">1px</dimen>
+
+    <!-- 常用字体大小 -->
+    <dimen name="base_textsize_10">10sp</dimen>
+    <dimen name="base_textsize_11">11sp</dimen>
+    <dimen name="base_textsize_12">12sp</dimen>
+    <dimen name="base_textsize_13">13sp</dimen>
+    <dimen name="base_textsize_14">14sp</dimen>
+    <dimen name="base_textsize_15">15sp</dimen>
+    <dimen name="base_textsize_16">16sp</dimen>
+    <dimen name="base_textsize_17">17sp</dimen>
+    <dimen name="base_textsize_18">18sp</dimen>
+    <dimen name="base_textsize_19">19sp</dimen>
+    <dimen name="base_textsize_24">24sp</dimen>
+
+    <!-- 常用Padding Margin 5dp 8do 10dp 15dp -->
+    <dimen name="base_p_m_5">5dp</dimen>
+    <dimen name="base_p_m_8">8dp</dimen>
+    <dimen name="base_p_m_10">10dp</dimen>
+    <dimen name="base_p_m_15">15dp</dimen>
+
+</resources>

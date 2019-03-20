@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="动态"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_height="@dimen/height_title_bar"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/icon_camera"
+            android:layout_marginRight="10dp"
+            android:id="@+id/iv_camera"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/stroke_deep"></View>
+    <com.fanwe.live.view.SDProgressPullToRefreshRecyclerView
+        android:id="@+id/lv_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:background="@color/white"
+        android:dividerPadding="8dp"
+        android:divider="@null"
+        android:listSelector="#00000000"/>
+
+</LinearLayout>

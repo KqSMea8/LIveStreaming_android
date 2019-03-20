@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_item_goods"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_activity"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_item_goods_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@color/white"
+        android:src="@drawable/ic_default_head"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_item_goods_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="【暴走萝莉家】内蒙古特产天美 华乳奶泡 优质奶酪 130g休闲零食"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_diamond"/>
+
+            <TextView
+                android:id="@+id/tv_item_goods_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/main_color"
+                android:text="2500"/>
+
+            <TextView
+                android:id="@+id/tv_item_goods_set_auction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设为拍卖"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:padding="5dp"
+                android:background="@drawable/selector_main_color_to_main_color_press_5dp_corner"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

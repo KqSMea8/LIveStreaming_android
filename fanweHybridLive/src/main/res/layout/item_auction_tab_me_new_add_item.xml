@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        style="@style/fra_tab_me_btn">
+
+        <ImageView
+            android:id="@+id/iv_center"
+            android:layout_width="17dp"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/tv_left_name"
+            android:layout_toRightOf="@+id/iv_center"
+            style="@style/fra_tab_me_tv"
+            android:text=""
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_right_text"
+                style="@style/fra_tab_me_tv"
+                android:text="0"
+                />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/ic_arrow_right_gray"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@color/gray_press"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">方维直播</string>
+
+    <!-- 是否开启竞拍模式 -->
+    <bool name="show_hide_pai_view">false</bool>
+    <!-- 是否直接打开webview MainActivity -->
+    <bool name="is_open_webview_main">false</bool>
+    <!--广告页面延迟毫秒数-->
+    <integer name="ad_delayed_time">1000</integer>
+    <!--appid待填（聚宝付支付）-->
+    <string name="app_id"></string>
+    <!-- 是否显示开播倒计时 -->
+    <bool name="show_create_room_count_down">true</bool>
+    <!-- 是否显示直播间网络速率 -->
+    <bool name="show_live_sdk_info">true</bool>
+    <!--域名列表-->
+    <string-array name="arr_host">
+        <!--<item>http://xxx.xxx.xxx</item>-->
+    </string-array>
+    <!--初始化页面延迟毫秒数-->
+    <integer name="init_delayed_time">3000</integer>
+    <!-- 启动页轮播广告是否开启  关闭 false 开启  true  -->
+    <bool name="is_open_adv">false</bool>
+    <!-- drawable-xxdpi 目录中adv_img_命名的轮播广告图片-->
+    <string-array name="adv_img_array">
+        <item>adv_img_1</item>
+        <item>adv_img_2</item>
+        <item>adv_img_3</item>
+    </string-array>
+    <!-- 是否使用原生Activity错误页面 -->
+    <bool name="is_use_no_network_activity">false</bool>
+    <bool name="is_open_small_screen">false</bool>
+    <!-- 友盟推送配置 -->
+    <string name="umeng_appkey">XXX</string>
+    <string name="umeng_message_secret_push">XXX</string>
+    <!--腾讯地图key-->
+    <string name="tencent_map_key">XXX</string>
+    <!-- 微信配置 -->
+    <string name="wx_app_id">XXX</string>
+    <string name="wx_app_secret">XXX</string>
+    <!-- QQ配置 -->
+    <string name="qq_auth_scheme">XXX</string>
+    <string name="qq_app_id">XXX</string>
+    <string name="qq_app_key">XXX</string>
+    <!-- 新浪配置 -->
+    <string name="sina_app_key">XXX</string>
+    <string name="sina_app_secret">XXX</string>
+
+    <!--腾讯直播appid-->
+    <string name="app_id_tencent_live">140018195</string>
+    <string name="account_type">36862</string>
+
+</resources>
+

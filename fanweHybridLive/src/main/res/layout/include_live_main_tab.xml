@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/live_tab_bg"
+              android:gravity="bottom"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom">
+
+        <com.fanwe.live.view.LiveTabMainMenuView
+            android:id="@+id/view_tab_live"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_tab_create_live"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="3dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="3dp"
+        android:src="@drawable/selector_live_tab_create_live"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom">
+
+        <com.fanwe.live.view.LiveTabMainMenuView
+            android:id="@+id/view_tab_me"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--秀豆宽度-->
+    <dimen name="image_diamond_size">14dp</dimen>
+    <!--头像大小-->
+    <dimen name="image_head_size">30dp</dimen>
+    <!--tem向右箭头大小-->
+    <dimen name="ic_arrow_right_gray_size">20dp</dimen>
+    <!--提交Button按钮高度-->
+    <dimen name="btn_common_height">35dp</dimen>
+</resources>

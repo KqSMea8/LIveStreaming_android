@@ -1,0 +1,152 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+    aaptOptions{
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+    defaultConfig {
+        applicationId "com.live.qianxiu"
+        minSdkVersion 15
+        targetSdkVersion 22
+        multiDexEnabled true
+        versionCode 20180928
+        versionName "1.1.8"
+        buildConfigField 'String', 'SERVER_URL', '"http://129.28.67.146:66"'
+        buildConfigField 'String', 'SERVER_URL_INIT_URL', '"http://129.28.67.146:66"'
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+
+    }
+
+    //签名
+    signingConfigs {
+        release {
+            storeFile file("qianxiulive.jks")
+            storePassword "qianxiu"
+            keyAlias "qianxiulive"
+            keyPassword "qianxiu"
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            zipAlignEnabled false
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+        }
+        release {
+            zipAlignEnabled true
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+//            output.outputFile = new File(output.outputFile.parent, variant.name + "_" + variant.versionName + ".apk");
+        }
+    }
+
+}
+
+repositories {
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: 'libs/upload')
+    //    compile fileTree(dir: 'src/main/jniLibs', includes: ['*.jar'])
+    compile(name: 'libraryAdapterHttp-release', ext: 'aar')
+    compile(name: 'libraryAndroidPercentSupportExtend-release', ext: 'aar')
+    compile(name: 'libraryAndroidPullToRefresh-release', ext: 'aar')
+    compile(name: 'libraryPayAlipay-release', ext: 'aar')
+    compile(name: 'libraryPayBaofoo-release', ext: 'aar')
+    compile(name: 'libraryPayUnionpay-release', ext: 'aar')
+    compile(name: 'libraryPhotoViewMaster-release', ext: 'aar')
+    compile(name: 'libraryQrcodeZxing-release', ext: 'aar')
+    compile(name: 'librarySocialUmeng-release', ext: 'aar')
+    compile(name: 'librarySpan-release', ext: 'aar')
+    compile(name: 'pickerview-release', ext: 'aar')
+    compile(name: 'PushSDK-release', ext: 'aar')
+    compile(name: 'TimePickerDialog-release', ext: 'aar')
+    compile(name: 'libraryIMTencent-release', ext: 'aar')
+    compile(name: 'libraryMapTencent-release', ext: 'aar')
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.5.3'
+    //bilibili弹幕
+
+    //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+
+    //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.google.android:flexbox:0.2.6'
+    compile 'com.yalantis:ucrop:2.2.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.ksyun.media:libksylive-java:2.2.5'
+    compile 'com.ksyun.media:libksylive-armv7a:2.2.5'
+    compile project(':libGame')
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    //百媚==========================================
+    compile 'com.scottsu:stateslayout:1.0.8'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+    // 导入短视频SDK aar
+    compile(name: 'LiteAVSDK_Professional_4.2.3425', ext: 'aar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile(name: 'zxing-1.8.4', ext: 'aar')
+    compile(name: 'barcodescanner-core-1.8.4', ext: 'aar')
+    compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    compile 'org.xutils:xutils:3.5.0'
+    compile project(':recordbutton')
+    compile 'com.zhihu.android:matisse:0.5.0-alpha4'
+    compile 'com.hjq:xxpermissions:5.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.github.yyued:SVGAPlayer-Android:2.1.4'
+    compile 'me.leolin:ShortcutBadger:1.1.19@aar'
+}

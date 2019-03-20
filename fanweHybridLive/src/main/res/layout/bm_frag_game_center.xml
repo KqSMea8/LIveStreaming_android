@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scottsu.stateslayout.StatesLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/states_layout_bm_frag_game_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bm_bg_game_center"
+    app:sl_loading_wheel_color="@color/main_color"
+    app:sl_state_background_color="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/ll_content_bm_frag_game_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/height_bottom_navigation"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_p_m_15"
+            android:layout_marginRight="@dimen/base_p_m_15"
+            android:layout_marginTop="@dimen/base_p_m_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fl_avatar"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:padding="4dp"
+                android:background="@drawable/bm_bg_avatar_game"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_in">
+
+                <com.fanwe.library.view.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:src="@drawable/bm_bg_btn_create_room"/>
+            </FrameLayout>
+
+            <com.zhy.android.percent.support.PercentFrameLayout
+                android:id="@+id/fl_user_diamonds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_p_m_15"
+                android:layout_weight="1"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_in">
+
+                <com.zhy.android.percent.support.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="25%w"
+                    android:background="@drawable/bm_bg_diamonds"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_user_diamonds"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        app:layout_paddingLeftPercent="5%"
+                        tools:text="1234567890"/>
+                </com.zhy.android.percent.support.PercentFrameLayout>
+            </com.zhy.android.percent.support.PercentFrameLayout>
+
+            <com.zhy.android.percent.support.PercentFrameLayout
+                android:id="@+id/fl_user_coins"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_p_m_15"
+                android:layout_weight="1"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_in">
+
+                <com.zhy.android.percent.support.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="25%w"
+                    android:background="@drawable/bm_bg_coins"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_user_coins"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        tools:text="1234567890"/>
+                </com.zhy.android.percent.support.PercentFrameLayout>
+            </com.zhy.android.percent.support.PercentFrameLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_layout_online_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/base_p_m_15"
+            android:background="@drawable/bm_shape_bg_online_count"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/bm_ic_online_count"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/base_p_m_10"
+                    android:text="@string/online"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_item_content"/>
+
+                <TextView
+                    android:id="@+id/tv_online_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    tools:text="1234567890"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_item_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_online_count"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_item_content"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_container_game_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/base_p_m_10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/base_p_m_15">
+
+            <ImageView
+                android:id="@+id/iv_refresh_room"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/bm_bg_refresh_friends_room"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_out"/>
+
+            <FrameLayout
+                android:id="@+id/fl_container_friends_room_bm_frag_game_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_p_m_10"/>
+        </LinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/base_p_m_15"
+            android:layout_marginRight="@dimen/base_p_m_15"
+            android:layout_marginTop="@dimen/base_p_m_10"
+            android:orientation="horizontal">
+
+            <com.zhy.android.percent.support.PercentFrameLayout
+                android:id="@+id/fl_create_room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_out"
+                app:layout_marginBottomPercent="15%w">
+
+                <ImageView
+                    android:id="@+id/iv_create_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bm_bg_btn_create_room"
+                    app:layout_heightPercent="34%w"/>
+            </com.zhy.android.percent.support.PercentFrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                app:layout_widthPercent="10%"/>
+
+            <com.zhy.android.percent.support.PercentFrameLayout
+                android:id="@+id/fl_enter_room"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:stateListAnimator="@drawable/bm_selector_press_scale_out">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bm_bg_btn_enter_room"
+                    app:layout_heightPercent="34%w"/>
+            </com.zhy.android.percent.support.PercentFrameLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </LinearLayout>
+
+</com.scottsu.stateslayout.StatesLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip">
+
+        <ImageView
+            android:id="@+id/iv_reset"
+            android:layout_width="25.0dip"
+            android:layout_height="20.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/room_effect_default"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="音效调节"
+            android:textColor="#ff3d4658"
+            android:textSize="20.0sp"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/room_effect_close"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ffbbbbbb"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal"
+        android:paddingBottom="16.0dip"
+        android:paddingTop="16.0dip">
+
+        <LinearLayout style="@style/room_eq_middle_item">
+
+            <com.fanwe.live.view.VerticalSeekBar
+                android:id="@+id/vs_bz"
+                style="@style/room_eq_vertical_seekbar"
+                android:max="100"
+            />
+
+            <TextView
+                style="@style/room_eq_effect_name"
+                android:text="伴奏"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/room_eq_middle_item">
+
+            <com.fanwe.live.view.VerticalSeekBar
+                android:id="@+id/vs_mic"
+                style="@style/room_eq_vertical_seekbar"
+                android:max="100"
+            />
+
+            <TextView
+                style="@style/room_eq_effect_name"
+                android:text="人声"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/room_eq_middle_item">
+
+            <ImageView
+                android:id="@+id/iv_add"
+                style="@style/room_eq_adjust_img"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/room_effect_up"/>
+
+            <TextView
+                android:id="@+id/tv_tone_value"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:textColor="@color/main_color"/>
+
+            <ImageView
+                android:id="@+id/iv_sub"
+                style="@style/room_eq_adjust_img"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/room_effect_down"/>
+
+            <TextView
+                style="@style/room_eq_effect_name"
+                android:text="升降调"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ffe5e5e5"/>
+
+    <HorizontalScrollView
+        android:id="@+id/bottom_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+    </HorizontalScrollView>
+</LinearLayout>

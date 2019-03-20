@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_coins_selected"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bg_bet_coins_selected"/>
+
+        <ImageView
+            android:id="@+id/iv_coins"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bg_bet_coins"/>
+
+        <TextView
+            android:id="@+id/tv_coins_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="10000"
+            android:textColor="@color/text_poker_bet_coins_number_enable"
+            android:textSize="8sp"/>
+    </FrameLayout>
+</RelativeLayout>

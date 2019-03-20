@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="@dimen/height_title_bar"
+             android:layout_height="@dimen/height_title_bar"
+             android:background="@drawable/xr_selector_transparent_gray" >
+
+    <ImageView
+        android:id="@+id/iv_view_xr_view_mark_title_item"
+        android:layout_width="@dimen/height_icon_m"
+        android:layout_height="@dimen/height_icon_m"
+        android:layout_gravity="center" />
+
+    <com.weibo.widget.XRSimpleCircleView
+        android:id="@+id/view_marker_xr_view_mark_title_item"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/base_p_m_5"
+        android:layout_marginTop="@dimen/base_p_m_5"
+        android:visibility="gone"
+        app:bg_color="@color/grey_translucent_light"/>
+
+</FrameLayout>

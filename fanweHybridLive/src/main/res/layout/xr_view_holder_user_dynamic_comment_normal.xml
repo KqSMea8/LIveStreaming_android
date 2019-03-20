@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/xr_selector_white_gray"
+             android:clickable="true"
+             android:focusable="true"
+             android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_xs"
+        android:paddingRight="@dimen/margin_xs"
+        android:paddingTop="@dimen/margin_xs">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/height_user_head_l"
+                android:layout_height="@dimen/height_user_head_l">
+
+                <com.fanwe.library.view.CircleImageView
+                    android:id="@+id/iv_user_head_xr_view_holder_user_dynamic_comment_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_user_authentication_xr_view_holder_user_dynamic_comment_normal"
+                    android:layout_width="@dimen/height_icon_s"
+                    android:layout_height="@dimen/height_icon_s"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/xr_ic_vip"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xs"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_user_name_xr_view_holder_user_dynamic_comment_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="@dimen/text_size_body"/>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_xr_view_holder_user_dynamic_comment_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/text_size_caption"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_content_xr_view_holder_user_dynamic_comment_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorSecondary"
+                    android:textSize="@dimen/text_size_caption"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider_line_s"
+            android:layout_marginLeft="@dimen/height_user_head_l"
+            android:layout_marginTop="@dimen/margin_xs"
+            android:background="@color/grey_translucent_light"/>
+    </LinearLayout>
+</FrameLayout>

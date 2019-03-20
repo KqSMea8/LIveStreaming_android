@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    android:background="@color/bg_live_normal">
+    <!-- 普通直播类型直播间背景 -->
+    <ImageView
+        android:id="@+id/iv_bm_live_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_bkg"
+        android:scaleType="centerCrop"
+        android:visibility="visible"/>
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/view_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"/>
+    <com.fanwe.live.appview.LiveLinkMicGroupView
+        android:id="@+id/view_link_mic_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!-- 关闭按钮 -->
+    <com.fanwe.live.appview.room.RoomCloseView
+        android:layout_width="wrap_content"
+        android:id="@+id/close_view"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+    <include
+        android:id="@+id/rl_root_layout"
+        layout="@layout/include_live_layout_creater_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/wawa_line"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/prizeclaw_ic_rope3"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/wawa_stub"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/prizeclaw_hook_1"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/bottom_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/prizeitem_01"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="invisible" />
+
+</RelativeLayout>

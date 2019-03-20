@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/xr_selector_white_gray"
+             android:clickable="true"
+             android:focusable="true"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_xs"
+        android:paddingRight="@dimen/margin_xs"
+        android:paddingTop="@dimen/margin_xs">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="@dimen/height_user_head_l"
+                android:layout_height="@dimen/height_user_head_l">
+
+                <com.fanwe.library.view.CircleImageView
+                    android:id="@+id/iv_user_head_xr_view_holder_user_dynamic_comment_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    tools:src="@drawable/xr_user_head_default_user_center"
+                    android:focusable="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_user_authentication_xr_view_holder_user_dynamic_comment_reply"
+                    android:layout_width="@dimen/height_icon_s"
+                    android:layout_height="@dimen/height_icon_s"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/xr_ic_vip"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xs"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_user_name_xr_view_holder_user_dynamic_comment_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        tools:text="嘎嘎"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="@dimen/text_size_body"/>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_time_xr_view_holder_user_dynamic_comment_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:maxLines="1"
+                        tools:text="1天前"
+                        android:singleLine="true"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/text_size_caption"/>
+                </LinearLayout>
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="回复"-->
+                        <!--android:textColor="@color/textColorSecondary"-->
+                        <!--android:textSize="@dimen/text_size_caption"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_user_name_replay_to_xr_view_holder_user_dynamic_comment_reply"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/res_main_color"-->
+                        <!--android:textSize="@dimen/text_size_caption"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text=": "-->
+                        <!--android:textColor="@color/textColorSecondary"-->
+                        <!--android:textSize="@dimen/text_size_caption"/>-->
+
+                    <com.fanwe.live.view.LivePrivateChatSpanTextView
+                        android:id="@+id/tv_content_xr_view_holder_user_dynamic_comment_reply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/margin_xs"
+                        tools:text="评论内容评论内容"
+                        android:textColor="@color/textColorSecondary"
+                        android:textSize="@dimen/text_size_caption"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider_line_s"
+            android:layout_marginLeft="@dimen/height_user_head_l"
+            android:layout_marginTop="@dimen/margin_xs"
+            android:background="@color/grey_translucent_light"/>
+    </LinearLayout>
+</FrameLayout>

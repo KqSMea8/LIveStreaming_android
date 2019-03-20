@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_play_video"
+            android:layout_width="@dimen/width_live_bottom_menu"
+            android:layout_height="@dimen/height_live_bottom_menu">
+
+            <ImageView
+                android:id="@+id/iv_play_video"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_live_bottom_play_video"/>
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sb_play_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:max="0"
+            android:maxHeight="30dp"
+            android:minHeight="30dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/bg_seekbar_play_video"
+            android:thumb="@drawable/ic_seekbar_thumb_play_video"
+            android:thumbOffset="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_duration"
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+</LinearLayout>

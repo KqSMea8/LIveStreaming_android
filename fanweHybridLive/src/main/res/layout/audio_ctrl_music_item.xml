@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/white"
+    >
+  <!--  <ImageView
+        android:id="@+id/music_item_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/music_item_selected"
+        android:visibility="gone"/>-->
+  <TextView
+      android:id="@+id/tv_download"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:text="下载"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:paddingTop="6dp"
+      android:paddingBottom="6dp"
+      android:background="@drawable/layer_blur_main_color_music_list"
+      android:textColor="@color/white"
+      android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/xml_music_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingTop="6dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:layout_toLeftOf="@id/tv_download"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/xml_music_item_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xml_music_item_name"
+        android:singleLine="true"
+        android:layout_toLeftOf="@id/tv_download"
+        android:paddingLeft="10dp"
+        android:textColor="@color/gray" />
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layer_white_corner"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll_beauty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美颜:"
+            android:textColor="@color/text_title"
+            android:textSize="13sp"
+            android:visibility="visible"/>
+        <SeekBar
+            android:id="@+id/sb_beauty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:max="100"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:paddingLeft="25px"
+            android:paddingRight="25px"
+            android:progressDrawable="@drawable/bg_seekbar_main_color"
+            android:thumb="@drawable/ic_seekbar_thumb_main_color"/>
+
+        <TextView
+            android:id="@+id/tv_beauty_percent"
+            style="@style/text_base"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:textColor="@color/text_title"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_whiten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/text_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美白:"
+            android:textColor="@color/text_title"
+            android:textSize="13sp"/>
+
+        <SeekBar
+            android:id="@+id/sb_whiten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:max="100"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:paddingLeft="25px"
+            android:paddingRight="25px"
+            android:progressDrawable="@drawable/bg_seekbar_main_color"
+            android:thumb="@drawable/ic_seekbar_thumb_main_color"/>
+
+        <TextView
+            android:id="@+id/tv_whiten_percent"
+            style="@style/text_base"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:textColor="@color/text_title"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <com.fanwe.library.customview.SDGridLinearLayout
+        android:id="@+id/ll_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

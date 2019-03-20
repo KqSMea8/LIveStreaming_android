@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/base_p_m_15">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/base_p_m_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room_code"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_title_bar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_item_title"/>
+
+        <TextView
+            android:id="@+id/tv_room_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_p_m_10"
+            android:textColor="@color/red"
+            android:textSize="26sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip"
+            android:textColor="@color/text_cont_item"
+            android:textSize="@dimen/text_item_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_item_title"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/base_p_m_10"
+        android:text="@string/tip_room_code_1"
+        android:textColor="@color/text_cont_item"
+        android:textSize="@dimen/text_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/base_p_m_5"
+        android:text="@string/tip_room_code_2"
+        android:textColor="@color/text_cont_item"
+        android:textSize="@dimen/text_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/base_p_m_5"
+        android:text="@string/tip_room_code_3"
+        android:textColor="@color/text_cont_item"
+        android:textSize="@dimen/text_content"/>
+
+    <Button
+        android:id="@+id/btn_invite"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="@dimen/base_p_m_10"
+        android:layout_marginRight="@dimen/base_p_m_10"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bm_shape_bg_button"
+        android:text="@string/invite_friends_in"
+        android:textSize="@dimen/text_dialog_button"/>
+
+    <LinearLayout
+        android:id="@+id/ll_enter_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/base_p_m_5"
+        android:stateListAnimator="@drawable/bm_selector_press_scale_out">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="＜"
+                android:textColor="@color/text_cont_item"
+                android:textSize="@dimen/text_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_room_without_invite"
+                android:textColor="@color/text_cont_item"
+                android:textSize="@dimen/text_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="＞"
+                android:textColor="@color/text_cont_item"
+                android:textSize="@dimen/text_content"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_gray"/>
+    </LinearLayout>
+
+</LinearLayout>

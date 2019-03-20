@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layer_white_corner"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/dialog_user_info_page_top" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/stroke" />
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_follow"
+            style="@style/text_base"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="关注"
+            android:textColor="@color/main_color_second"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_letter"
+            style="@style/text_base"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="私信"
+            android:textColor="@color/main_color_second"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_reply"
+            style="@style/text_base"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="回复"
+            android:textColor="@color/main_color_second"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_mainpage"
+            style="@style/text_base"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="主页"
+            android:textColor="@color/main_color_second"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

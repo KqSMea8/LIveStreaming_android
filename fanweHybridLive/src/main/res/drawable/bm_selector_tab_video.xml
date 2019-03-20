@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/yx_tab_new_attention_normal"
+        android:state_selected="false"/>
+    <item
+        android:drawable="@drawable/yx_tab_new_attention_select"
+        android:state_selected="true"/>
+
+</selector>

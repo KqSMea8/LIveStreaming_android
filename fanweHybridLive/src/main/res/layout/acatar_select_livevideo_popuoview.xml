@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/select_popu_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:gravity="center"
+        android:layoutAnimation="@anim/gridview_anim"
+        android:numColumns="2" />
+
+    <ImageView
+        android:id="@+id/btn_popu_cancel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/icon_live"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        />
+
+</LinearLayout>

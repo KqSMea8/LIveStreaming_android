@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <ImageView
+        android:id="@+id/img_marry_star"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/animation_marry_star"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/img_marry_light"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/animation_marry_light"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/img_marry_balloon_fly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/animation_marry_balloon_fly"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/img_marry_balloon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/animation_marry_balloon"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/img_marry_stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/animation_marry_stage"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/img_marry_lovers"
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/animation_marry_lovers"
+        android:visibility="invisible"/>
+
+</FrameLayout>

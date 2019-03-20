@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"/>
+
+    <com.fanwe.live.view.SDProgressPullToRefreshRecyclerView
+        android:id="@+id/lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:dividerPadding="1dp"
+        android:divider="@color/line"
+        android:listSelector="#00000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="left"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:background="@drawable/layer_white_stroke_corner_item_single"
+            android:hint="请输入评论内容"
+            />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:text="发布"
+            android:background="@drawable/layer_main_color_corner_6dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 常用字体大小 -->
+    <dimen name="base_textsize_12">10sp</dimen>
+    <dimen name="base_textsize_13">11sp</dimen>
+    <dimen name="base_textsize_14">12sp</dimen>
+    <dimen name="base_textsize_15">13sp</dimen>
+    <dimen name="base_textsize_16">14sp</dimen>
+    <dimen name="base_textsize_17">15sp</dimen>
+    <dimen name="base_textsize_18">16sp</dimen>
+
+    <!-- 常用Padding Margin 5dp 8do 10dp 15dp -->
+    <dimen name="base_p_m_5">4dp</dimen>
+    <dimen name="base_p_m_8">6.4dp</dimen>
+    <dimen name="base_p_m_10">8dp</dimen>
+    <dimen name="base_p_m_15">12dp</dimen>
+    <!-- 常用图片宽度 30dp -->
+    <dimen name="base_image_w_h_30">25dp</dimen>
+    <dimen name="base_image_w_h_25">20dp</dimen>
+</resources>

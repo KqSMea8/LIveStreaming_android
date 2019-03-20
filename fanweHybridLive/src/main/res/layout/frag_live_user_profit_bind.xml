@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+               android:gravity="center_horizontal"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_binding_wx"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/selector_main_color_to_main_color_press_5dp_corner"
+        android:layout_margin="10dp"
+        android:text="绑定微信"/>
+    <TextView
+        android:id="@+id/tv_binding_mobile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/selector_main_color_to_main_color_press_5dp_corner"
+        android:text="绑定手机"/>
+    <TextView
+        android:id="@+id/tv_focus_gz"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_main_color_to_main_color_press_5dp_corner"
+        android:text="关注公众号"/>
+</LinearLayout>

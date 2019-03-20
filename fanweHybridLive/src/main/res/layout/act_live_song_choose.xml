@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_live_tab_follow_no_live"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_title_bar"
+            android:layout_marginBottom="@dimen/base_p_m_5" >
+
+            <include layout="@layout/include_live_title_bar_back_transparent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="点歌"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_live_search_bar"
+            android:layout_margin="@dimen/base_p_m_15"
+            android:background="@drawable/live_song_search_edittext_shape"
+            android:drawableLeft="@drawable/ic_edit_search_gray"
+            android:drawablePadding="@dimen/base_p_m_5"
+            android:gravity="center_vertical"
+            android:hint="搜索歌曲"
+            android:padding="@dimen/base_p_m_8" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/base_p_m_15"
+        android:background="@color/stroke" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.fanwe.live.view.SDProgressPullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/stroke"
+            android:dividerHeight="1px"
+            android:listSelector="#00000000"
+            ptr:ptrHeaderSubTextColor="@android:color/black"
+            ptr:ptrHeaderTextColor="@android:color/black" />
+
+        <RelativeLayout
+            android:id="@+id/rl_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_empty_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_empty"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_no_song" />
+
+            <TextView
+                android:id="@+id/tv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/base_p_m_8"
+                android:text="快去搜索你想要的歌吧"
+                android:textColor="@color/text_gray" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

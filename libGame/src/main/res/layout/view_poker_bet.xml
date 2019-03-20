@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_bg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/layer_poker_bet_bottom"/>
+
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_goldflower_star_0"/>
+
+    <!-- 投注倍数 -->
+    <TextView
+        android:id="@+id/tv_bet_multiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_bg_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:text="3倍"
+        android:textColor="@color/text_poker_bet_multiple"
+        android:textSize="14sp"/>
+
+    <!-- 总投注 -->
+    <TextView
+        android:id="@+id/tv_total_bet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="38dp"
+        android:shadowColor="@color/black"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="1590"
+        android:textColor="@color/text_poker_total_bet"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <!-- 我的投注 -->
+        <TextView
+            android:id="@+id/tv_user_bet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:textColor="@color/text_poker_my_bet"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

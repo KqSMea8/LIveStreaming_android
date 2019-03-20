@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bm_layer_white_corner_10dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="开通守护"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="选择守护类型:"
+        android:textColor="@color/text_title"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/stroke_deep"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/lv_type"
+        android:scrollbars="none"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="2"
+        android:layout_height="wrap_content">
+    </GridView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/stroke_deep"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择守护天数:"
+        android:textColor="@color/text_title"
+        android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/stroke_deep"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:id="@+id/lv_days"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_height="wrap_content">
+    </GridView>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layer_white_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="120.6dp"
+            android:layout_height="31.5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_plugin_price"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:text="0"
+            android:textColor="@color/text_title"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/layer_main_btn_pk_time_chose"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="开通"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

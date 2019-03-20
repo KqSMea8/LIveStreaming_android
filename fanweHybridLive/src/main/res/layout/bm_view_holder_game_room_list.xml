@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tv_room_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/base_p_m_5"
+                android:paddingRight="@dimen/base_p_m_5"
+                tools:text="123321"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_item_content"/>
+
+            <ImageView
+                android:id="@+id/iv_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/base_p_m_10"
+                android:src="@drawable/bm_ic_live_game_room_list"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="@dimen/base_stroke_1px"
+            android:layout_height="match_parent"
+            android:background="#33666666"/>
+
+        <TextView
+            android:id="@+id/tv_room_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/base_p_m_15"
+            android:paddingLeft="@dimen/base_p_m_5"
+            android:paddingRight="@dimen/base_p_m_5"
+            android:paddingTop="@dimen/base_p_m_15"
+            android:singleLine="true"
+            tools:text="斗地主新手场(12343434343434434331234343434343443433)"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_item_content"/>
+
+        <View
+            android:layout_width="@dimen/base_stroke_1px"
+            android:layout_height="match_parent"
+            android:background="#33666666"/>
+
+        <TextView
+            android:id="@+id/tv_audience_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_p_m_15"
+            android:paddingLeft="@dimen/base_p_m_5"
+            android:paddingRight="@dimen/base_p_m_5"
+            android:paddingTop="@dimen/base_p_m_15"
+            tools:text="665"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_item_content"/>
+
+        <View
+            android:layout_width="@dimen/base_stroke_1px"
+            android:layout_height="match_parent"
+            android:background="#33666666"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/btn_enter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/base_p_m_5"
+                android:layout_marginRight="@dimen/base_p_m_5"
+                android:layout_marginTop="@dimen/base_p_m_10"
+                android:layout_marginBottom="@dimen/base_p_m_10"
+                android:background="@drawable/bm_shape_bg_button"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/join"
+                android:textSize="@dimen/text_item_content"/>
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="@dimen/base_stroke_1px"
+            android:layout_height="match_parent"
+            android:background="#33666666"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_stroke_1px"
+        android:background="#33666666"/>
+</LinearLayout>

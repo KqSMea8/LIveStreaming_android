@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--竞拍直播详情页面颜色-->
+    <color name="auction_main_color">#FF7551</color>
+    <color name="auction_yellow_color">#FFF177</color>
+    <color name="auction_time_bg_color">#58300D</color>
+    <color name="auction_center_bg">#FFF6F7</color>
+    <color name="auction_goods_detail_status_bg1">#4C5359</color>
+    <color name="auction_goods_detail_status_bg2">#6B747B</color>
+</resources>

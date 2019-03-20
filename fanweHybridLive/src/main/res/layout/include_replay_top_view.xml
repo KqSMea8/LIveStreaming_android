@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个精彩回放"
+            android:textSize="14sp"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <com.fanwe.live.view.TabLeftImage
+                android:id="@+id/left_tab_sort0"
+                android:layout_width="50dp"
+                android:layout_height="30dp" >
+            </com.fanwe.live.view.TabLeftImage>
+
+            <com.fanwe.live.view.TabLeftImage
+                android:id="@+id/left_tab_sort1"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp" >
+            </com.fanwe.live.view.TabLeftImage>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

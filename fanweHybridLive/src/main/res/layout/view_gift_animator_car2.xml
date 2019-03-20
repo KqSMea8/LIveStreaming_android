@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_gift_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:maxWidth="150dp"
+            android:text="礼物"
+            android:textColor="@color/live_msg_send_gift_animator"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:id="@+id/iv_car_front_tyre"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_anim_car2_tyre"/>
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_anim_car2_body"/>
+    </FrameLayout>
+
+
+</LinearLayout>

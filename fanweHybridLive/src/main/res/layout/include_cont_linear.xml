@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_cont"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selector_white_to_gray_press"
+              android:gravity="center_vertical"
+              android:minHeight="50dp"
+              android:orientation="horizontal"
+              android:paddingBottom="5dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="5dp">
+
+    <com.fanwe.live.view.LiveStringTicketTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="贡献榜"
+        android:textColor="@color/user_home_text_gray"
+        android:textSize="14sp"/>
+
+
+    <com.fanwe.library.view.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:id="@+id/iv_first"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:src="@drawable/ic_me_qiuzhan"
+                                            android:visibility="invisible"
+                                            app:civ_border_color="@color/white"
+                                            app:civ_border_width="1dp"/>
+
+    <com.fanwe.library.view.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:id="@+id/iv_second"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:src="@drawable/ic_me_qiuzhan"
+                                            android:visibility="invisible"
+                                            app:civ_border_color="@color/white"
+                                            app:civ_border_width="1dp"/>
+
+    <com.fanwe.library.view.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:id="@+id/iv_third"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:src="@drawable/ic_me_qiuzhan"
+                                            android:visibility="invisible"
+                                            app:civ_border_color="@color/white"
+                                            app:civ_border_width="1dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_arrow_right_gray"/>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_push_manage_header"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#10918552"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:text="直播消息提醒"
+            android:textColor="@color/text_title"/>
+
+        <com.fanwe.live.view.SDSlidingButton
+            android:id="@+id/sl_btn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:src="@drawable/switch_setting_white_corner_track"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                android:src="@drawable/switch_setting_main_color_corner_track"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:src="@drawable/switch_setting_white_round_thumb"/>
+        </com.fanwe.live.view.SDSlidingButton>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:text="你可以关闭TA的提醒，不再接收TA的直播消息"
+        android:textColor="#B9B9B9"
+        android:visibility="gone"/>
+
+</LinearLayout>

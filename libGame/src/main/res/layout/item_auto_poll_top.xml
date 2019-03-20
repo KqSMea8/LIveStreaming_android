@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    >
+
+    <ImageView
+        android:id="@+id/sort_icon_bottom"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/prizeitem_bottom"
+        android:layout_marginTop="25dp"
+        />
+    <ImageView
+        android:id="@+id/sort_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/prizeitem_01" />
+    <TextView
+        android:id="@+id/sort_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@id/sort_icon"
+        android:layout_marginTop="36dp"
+        android:text="x15"
+        android:textSize="7sp" />
+
+</FrameLayout>

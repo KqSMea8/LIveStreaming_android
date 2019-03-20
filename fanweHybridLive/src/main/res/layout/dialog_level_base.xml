@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/bg_white_rectangle_radius_30"
+            android:layout_width="300dp"
+            android:layout_height="225dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="每日首次登陆奖励"
+                android:textSize="@dimen/base_textsize_24"
+                android:textColor="@color/text_color_gray_3"
+                android:layout_marginTop="71dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="经验+10"
+                android:textSize="@dimen/base_textsize_18"
+                android:textColor="@color/text_color_gray_6"
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_content" />
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:background="@drawable/bg_main_color_rectangle_radius"
+                android:textSize="@dimen/base_textsize_17"
+                android:textColor="@color/white"
+                android:text="知道了"
+                android:layout_marginBottom="15dp"
+                android:layout_width="250dp"
+                android:layout_height="44dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_tip_image"
+            android:src="@drawable/ic_level_login_first"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="170dp"
+            android:layout_height="130dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

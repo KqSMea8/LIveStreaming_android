@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+<com.fanwe.live.view.MultyTabView
+    android:layout_width="80dp"
+    android:id="@+id/multyTabView"
+    android:layout_height="40dp"></com.fanwe.live.view.MultyTabView>
+
+    <EditText
+        android:id="@+id/et_content"
+        style="@style/edit_base"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/layer_white_stroke_corner_item_single"
+        android:hint="@string/live_send_msg_hint_normal"
+        android:minHeight="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_send"
+        style="@style/btn_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/selector_main_color_corner"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="发送"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

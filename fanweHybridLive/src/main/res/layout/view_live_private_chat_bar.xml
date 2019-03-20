@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/rl_chat_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layer_white_stroke_all_deep"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp">
+
+            <ImageView
+                android:id="@+id/iv_keyboard"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_chatbar_keyboard"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_chatbar_voice"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.fanwe.library.span.view.SDSpannableEdittext
+                android:id="@+id/et_content"
+                style="@style/edit_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layer_white_stroke_corner_item_single"
+                android:minHeight="40dp"/>
+
+            <TextView
+                android:id="@+id/tv_record"
+                style="@style/text_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_white_gray_stroke_corner_item_single"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:text="按住说话"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+
+            <ImageView
+                android:id="@+id/iv_hide_expression"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_chatbar_hide_expression"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/iv_show_expression"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_chatbar_show_expression"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_main_color_to_main_color_press_5dp_corner"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:minWidth="45dp"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                android:src="@drawable/ic_chatbar_more"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_auction_info"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:paddingLeft="10dp"
+              android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/ll_top_price"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@drawable/layer_blur_live_ticket"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高价"
+            android:textColor="@color/white"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/tv_top_price"
+            style="@style/text_base_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="11sp"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_arrow_right_yinpiao_check"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_remaining_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_base_shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="竞拍剩余时间"
+                android:textColor="@color/white"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/tv_remaining_time"
+                style="@style/text_base_shadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00时00分00秒"
+                android:textColor="@color/white"
+                android:textSize="11sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

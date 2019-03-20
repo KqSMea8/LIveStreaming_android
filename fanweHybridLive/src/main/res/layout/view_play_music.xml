@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:lrc="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_effect"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:background="@drawable/selector_song_effect_btn"/>
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/selector_song_stop_btn"/>
+    </LinearLayout>
+    <com.fanwe.live.music.lrc.LrcView
+        android:id="@+id/lrc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        lrc:currentTextColor="#75C8E8"
+        lrc:normalTextColor="@android:color/white"
+        lrc:timeTextColor="#AAC0BEBC"
+        lrc:dividerHeight="10dp"
+        lrc:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tv_music_name"
+        android:textColor="@android:color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/base_p_m_15"
+        android:layout_marginBottom="@dimen/base_p_m_15" />
+</LinearLayout>

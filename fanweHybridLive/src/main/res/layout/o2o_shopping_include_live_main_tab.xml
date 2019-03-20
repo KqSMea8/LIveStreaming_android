@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom">
+
+        <com.fanwe.library.view.SDTabMenu
+            android:id="@+id/view_tab_1"
+            android:layout_width="60dp"
+            android:layout_height="51dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom">
+
+        <com.fanwe.library.view.SDTabMenu
+            android:id="@+id/view_tab_2"
+            android:layout_width="60dp"
+            android:layout_height="51dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_tab_create_live"
+        android:layout_width="71.5dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:src="@drawable/o2o_shopping_ic_create_room"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom">
+
+        <com.fanwe.library.view.SDTabMenu
+            android:id="@+id/view_tab_3"
+            android:layout_width="60dp"
+            android:layout_height="51dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom">
+
+        <com.fanwe.library.view.SDTabMenu
+            android:id="@+id/view_tab_4"
+            android:layout_width="60dp"
+            android:layout_height="51dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

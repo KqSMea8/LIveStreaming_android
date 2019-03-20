@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pc_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_control_view_land_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/iv_pc_return"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_pc_return"/>
+
+                <TextView
+                    android:id="@+id/tv_pc_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_textsize_16"
+                    android:text="直播间标题"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_control_view_land_right"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/iv_pc_lock"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_pc_return"/>
+
+                <ImageView
+                    android:id="@+id/iv_pc_gift"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_pc_return"/>
+
+                <ImageView
+                    android:id="@+id/iv_pc_danmaku_switch"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_pc_return"/>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_control_view_land_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#99000000"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/iv_pc_pause"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_pc_pause"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:id="@+id/iv_pc_refresh"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_pc_pause"/>
+
+                <com.fanwe.live.appview.room.RoomPCSendMsgLandView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+                
+                <TextView
+                    android:id="@+id/tv_pc_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/base_textsize_15"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="房间列表"/>
+        </LinearLayout>
+</RelativeLayout>

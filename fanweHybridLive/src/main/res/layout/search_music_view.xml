@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:ignore="contentDescription">
+
+    <include layout="@layout/include_title_simple" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_live_search_bar"
+            android:layout_margin="@dimen/base_p_m_15"
+            android:layout_toLeftOf="@id/tv_search"
+            android:layout_weight="1"
+            android:background="@drawable/live_song_search_edittext_shape"
+            android:drawableLeft="@drawable/ic_edit_search_gray"
+            android:drawablePadding="@dimen/base_p_m_5"
+            android:gravity="center_vertical"
+            android:hint="输入歌曲名或歌手"
+            android:padding="@dimen/base_p_m_8" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/edit_search"
+            android:drawablePadding="@dimen/base_p_m_5"
+            android:padding="@dimen/base_p_m_8"
+            android:text="搜索"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <com.fanwe.shortvideo.videorecord.MusicListView
+        android:id="@+id/xml_music_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    </com.fanwe.shortvideo.videorecord.MusicListView>
+
+</LinearLayout>
